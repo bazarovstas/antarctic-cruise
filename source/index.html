@@ -14,207 +14,402 @@
 
   <body>
     <div class="wrapper">
-      <header class="main-header  header">
+      <header class="main-header  header  main-nav  main-nav--closed">
         <div class="container">
           <div class="main-header__wrapper">
-            <h1 class="visually-hidden" aria-label="Сайт компании по производству и монтажу печатных плат, а также поставке комплектующих.">Smart Device</h1>
             <div class="main-header__logo-wrapper">
               <a class="main-header__logo  logo-header">
-                <svg class="logo-header__image" width="215" height="55" aria-hidden="true" focusable="false">
+                <svg class="logo-header__image" width="70" height="38" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite_auto.svg#logo"></use>
-                </svg>
-                <svg class="logo-header__image  logo-header__image--mobile" width="35" height="35" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite_auto.svg#logo-mobile"></use>
                 </svg>
               </a>
             </div>
 
-            <div class="main-header__nav-wrapper">
-              <div class="main-header__email-wrapper">
-                <a class="main-header__email-link" href="mailto:info@sd.ru" aria-label="Напишите нам письмо на электронную почту.">
-                  <svg class="main-header__email-icon" width="20" height="20" aria-hidden="true" focusable="false">
-                    <use xlink:href="img/sprite_auto.svg#icon-email"></use>
-                  </svg>
-                  <p class="main-header__email-text">info@sd.ru</p>
-                </a>
-              </div>
+            <nav class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Преимущества</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Направления</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Ближайшие круизы</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
 
-              <div class="main-header__phone-wrapper">
-                <a class="main-header__phone-link" href="tel:+74950005252" aria-label="Позвоните нам по телефону.">
-                  <svg class="main-header__phone-icon" width="20" height="20" aria-hidden="true" focusable="false">
-                    <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
-                  </svg>
-                  <p class="main-header__phone-text">+7 (495) 000 52 52</p>
-                </a>
-              </div>
-
-              <button class="btn  btn--main-header" type="button" aria-label="Открыть форму заказа обратного звонка." data-open-modal="contact">Заказать звонок</button>
-            </div>
-
+            <button class="main-nav__toogle" type="button">
+              <svg class="main-nav__toogle-closed" width="24" height="12" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite_auto.svg#icon-menu-closed"></use>
+              </svg>
+              <svg class="main-nav__toogle-open" width="13" height="13" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite_auto.svg#icon-menu-open"></use>
+              </svg>
+              <span class="visually-hidden" aria-label="Открыть мобильное меню.">Открыть меню</span>
+            </button>
           </div>
         </div>
       </header>
 
 
       <main class="main-container">
+        <section class="main">
+          <div class="main__wrapper">
+            <div class="main__container">
+              <h1 class="main__heading">Круизы в&nbsp;Антарктику</h1>
+              <p class="main__text-content">Волшебный мир айсбергов и&nbsp;пингвинов</p>
+            </div>
+          </div>
+        </section>
+
         <section class="promo">
           <div class="promo__wrapper">
-            <div class="promo__container">
-              <h2 class="promo__heading">Печатные платы</h2>
-              <p class="promo__text">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <a class="promo__link  btn  btn--promo" href="#feedback" aria-label="Перейти в раздел заполнения формы вопроса.">
-                <span class="promo__link-text  promo__link-text--short">Бесплатная консультация</span>
-                <span class="promo__link-text  promo__link-text--long">Получить бесплатную консультацию</span>
-              </a>
+            <div class="promo__layout-container">
+              <h2 class="promo__heading">Путешествие на край Земли</h2>
+              <p class="promo__text-content">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+            </div>
+            <div class="promo__image-wrapper">
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/contents/image-penguins-tablet.webp 1x, image-penguins-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-penguins-mobile.webp 1x, img/contents/image-penguins-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/contents/image-penguins-desktop.webp 1x, image-penguins-desktop@2x.webp 2x"> -->
+
+                <source type="image/jpg" width="324" height="175" media="(max-width: 1023px)" srcset="img/contents/image-penguins-tablet.jpg 1x, image-penguins-tablet@2x.jpg 2x">
+                <source type="image/jpg" width="290" height="156" media="(max-width: 767px)" srcset="img/contents/image-penguins-mobile.jpg 1x, img/contents/image-penguins-mobile@2x.jpg 2x">
+                <img class="promo__image" width="560" height="301" src="img/contents/image-penguins-desktop.jpg" alt="3 пингвина стоят на склоне." srcset="img/contents/image-penguins-desktop@2x.jpg 2x">
+              </picture>
             </div>
           </div>
         </section>
 
         <section class="advantages">
           <div class="advantages__wrapper">
-            <h2 class="advantages__heading  visually-hidden">Преимущества</h2>
+            <h2 class="advantages__heading">Преимущества</h2>
 
             <ul class="advantages__list">
               <li class="advantages__item">
-                <svg class="advantages__icon" width="35" height="35" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use>
+                <svg class="advantages__icon" width="27" height="32" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite_auto.svg#icon-cruiser"></use>
                 </svg>
-                <h3 class="advantages__item-title">Оперативные сроки</h3>
-                <p class="advantages__item-description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
+                <h3 class="advantages__item-title">Небольшой круизный лайнер</h3>
+                <p class="advantages__item-description">Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
               </li>
 
               <li class="advantages__item">
-                <svg class="advantages__icon" width="35" height="35" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite_auto.svg#icon-hired"></use>
+                <svg class="advantages__icon" width="38" height="32" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite_auto.svg#icon-double-check"></use>
                 </svg>
-                <h3 class="advantages__item-title">Крупные поставщики</h3>
-                <p class="advantages__item-description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.
-                </p>
+                <h3 class="advantages__item-title">Система все включено</h3>
+                <p class="advantages__item-description">Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
               </li>
 
               <li class="advantages__item">
-                <svg class="advantages__icon" width="35" height="35" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite_auto.svg#icon-detective"></use>
+                <svg class="advantages__icon" width="44" height="32" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite_auto.svg#icon-boat"></use>
                 </svg>
-                <h3 class="advantages__item-title">Полная конфиденциальность</h3>
-                <p class="advantages__item-description">По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.
-                </p>
-              </li>
-
-              <li class="advantages__item">
-                <svg class="advantages__icon" width="35" height="35" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite_auto.svg#icon-tag"></use>
-                </svg>
-                <h3 class="advantages__item-title">Персонализация стоимости</h3>
-                <p class="advantages__item-description">Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.
-                </p>
+                <h3 class="advantages__item-title">Экскурсионные туры на&nbsp;Zodiac</h3>
+                <p class="advantages__item-description">Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiack c&nbsp;опытными экскурсоводами.</p>
               </li>
             </ul>
           </div>
         </section>
 
-        <section class="about-us">
-          <div class="about-us__wrapper">
-            <h2 class="about-us__heading">О компании</h2>
-            <button class="btn  btn--about-us" type="button" aria-label="Узнать более подробную информацию про нашу компанию." data-spoiler-button>Подробнее</button>
-            <p class="about-us__content  about-us__content--first">
-              Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.
-            </p>
-            <p class="about-us__content  about-us__content--second">
-              Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-            </p>
-            <div class="about-us__spoiler-wrapper">
-              <p class="about-us__spoiler-content  about-us__spoiler-content--first" data-spoiler-1>
-                Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
-              </p>
-              <p class="about-us__spoiler-content  about-us__spoiler-content--second" data-spoiler-2>
-                Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.
-              </p>
-              <p class="about-us__spoiler-content  about-us__spoiler-content--third" data-spoiler-3>
-                Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов.
-              </p>
-            </div>
-          </div>
-        </section>
+        <section class="cruises">
+          <div class="cruises__wrapper">
+            <h2 class="cruises__heading">Ближайшие круизы</h2>
 
-        <section class="goods-services">
-          <div class="goods-services__wrapper">
-            <h2 class="goods-services__heading">
-              <span class="goods-services__heading  goods-services__heading--desktop-tablet">Smart Device предлагает следующие товары и&nbsp;услуги</span>
-              <span class="goods-services__heading  goods-services__heading--mobile">Товары и&nbsp;услуги Smart&nbsp;Device</span>
-            </h2>
-            <div class="goods-services__list-wrapper">
-              <ul class="goods-services__list">
-                <li class="goods-services__item  goods-services__item--production">
-                  <a class="goods-services__link" href="#">
-                    <p class="goods-services__text">Производство<br>печатных плат</p>
-                    <span class="goods-services__icon-wrapper">
-                      <svg class="goods-services__icon" width="5" height="10" aria-hidden="true" focusable="false">
-                        <use xlink:href="img/sprite_auto.svg#icon-button-arrow"></use>
-                      </svg>
-                    </span>
-                  </a>
+            <div class="cruises__list-container">
+              <ul class="cruises__list">
+                <li class="cruises__item">
+                  <article class="cruises__article">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/contents/image-astoria-tablet.webp 1x, image-astoria-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-astoria-mobile.webp 1x, img/contents/image-astoria-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/contents/image-astoria-desktop.webp 1x, image-astoria-desktop@2x.webp 2x"> -->
+
+                      <source type="image/jpg" width="309" height="386" media="(max-width: 1023px)" srcset="img/contents/image-astoria-tablet.jpg 1x, image-astoria-tablet@2x.jpg 2x">
+                      <source type="image/jpg" width="270" height="386" media="(max-width: 767px)" srcset="img/contents/image-astoria-mobile.jpg 1x, img/contents/image-astoria-mobile@2x.jpg 2x">
+                      <img class="cruises__image" width="260" height="386" src="img/contents/image-astoria-desktop.jpg" loading="lazy" alt="Круизный тур 'Астория'." srcset="img/contents/image-astoria-desktop.jpg@2x.jpg 2x">
+                    </picture>
+                    <h3 class="cruises__article-heading">Круиз "Астория"</h3>
+                    <div class="cruises__info-container">
+                      <dl class="cruises__info">
+                        <dt>Маршрут</dt>
+                        <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</dd>
+                        <dt>Порт отправления</dt>
+                        <dd>Монтевидео</dd>
+                        <dt>Продолжительность</dt>
+                        <dd>25 дней</dd>
+                        <dt>Цена</dt>
+                        <dd>от&nbsp;16500&nbsp;$</dd>
+                      </dl>
+                      <a class="cruises__booking-btn  btn" href="#">Забронировать</a>
+                    </div>
+                  </article>
                 </li>
-                <li class="goods-services__item  goods-services__item--installation">
-                  <a class="goods-services__link" href="#">
-                    <p class="goods-services__text">Монтаж печатных<br>плат</p>
-                    <span class="goods-services__icon-wrapper">
-                      <svg class="goods-services__icon" width="5" height="10" aria-hidden="true" focusable="false">
-                        <use xlink:href="img/sprite_auto.svg#icon-button-arrow"></use>
-                      </svg>
-                    </span>
-                  </a>
+
+                <li class="cruises__item">
+                  <article class="cruises__article">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/contents/image-astoria-tablet.webp 1x, image-astoria-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-astoria-mobile.webp 1x, img/contents/image-astoria-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/contents/image-astoria-desktop.webp 1x, image-astoria-desktop@2x.webp 2x"> -->
+
+                      <source type="image/jpg" width="309" height="386" media="(max-width: 1023px)" srcset="img/contents/image-astoria-tablet.jpg 1x, image-astoria-tablet@2x.jpg 2x">
+                      <source type="image/jpg" width="270" height="386" media="(max-width: 767px)" srcset="img/contents/image-astoria-mobile.jpg 1x, img/contents/image-astoria-mobile@2x.jpg 2x">
+                      <img class="cruises__image" width="260" height="386" src="img/contents/image-astoria-desktop.jpg" loading="lazy" alt="Круизный тур 'Элайн'." srcset="img/contents/image-astoria-desktop.jpg@2x.jpg 2x">
+                    </picture>
+                    <h3 class="cruises__article-heading">Круиз "Элайн"</h3>
+                    <div class="cruises__info-container">
+                      <dl class="cruises__info">
+                        <dt>Маршрут</dt>
+                        <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</dd>
+                        <dt>Порт отправления</dt>
+                        <dd>Буэнос-Айрес</dd>
+                        <dt>Продолжительность</dt>
+                        <dd>20 дней</dd>
+                        <dt>Цена</dt>
+                        <dd>от&nbsp;14500&nbsp;$</dd>
+                      </dl>
+                      <a class="cruises__booking-btn  btn" href="#">Забронировать</a>
+                    </div>
+                  </article>
                 </li>
-                <li class="goods-services__item  goods-services__item--components">
-                  <a class="goods-services__link" href="#">
-                    <p class="goods-services__text">Комплектующие<br>для светотехники</p>
-                    <span class="goods-services__icon-wrapper">
-                      <svg class="goods-services__icon" width="5" height="10" aria-hidden="true" focusable="false">
-                        <use xlink:href="img/sprite_auto.svg#icon-button-arrow"></use>
-                      </svg>
-                    </span>
-                  </a>
+
+                <li class="cruises__item">
+                  <article class="cruises__article">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/contents/image-atlantis-tablet.webp 1x, image-atlantis-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-atlantis-mobile.webp 1x, img/contents/image-atlantis-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/contents/image-atlantis-desktop.webp 1x, image-atlantis-desktop@2x.webp 2x"> -->
+
+                      <source type="image/jpg" width="309" height="386" media="(max-width: 1023px)" srcset="img/contents/image-atlantis-tablet.jpg 1x, image-atlantis-tablet@2x.jpg 2x">
+                      <source type="image/jpg" width="270" height="386" media="(max-width: 767px)" srcset="img/contents/image-atlantis-mobile.jpg 1x, img/contents/image-atlantis-mobile@2x.jpg 2x">
+                      <img class="cruises__image" width="260" height="386" src="img/contents/image-atlantis-desktop.jpg" loading="lazy" alt="Круизный тур 'Атлантис'." srcset="img/contents/image-atlantis-desktop.jpg@2x.jpg 2x">
+                    </picture>
+                    <h3 class="cruises__article-heading">Круиз "Атлантис"</h3>
+                    <div class="cruises__info-container">
+                      <dl class="cruises__info">
+                        <dt>Маршрут</dt>
+                        <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</dd>
+                        <dt>Порт отправления</dt>
+                        <dd>Пуэрто-Монт</dd>
+                        <dt>Продолжительность</dt>
+                        <dd>21 день</dd>
+                        <dt>Цена</dt>
+                        <dd>от&nbsp;13500&nbsp;$</dd>
+                      </dl>
+                      <a class="cruises__booking-btn  btn" href="#">Забронировать</a>
+                    </div>
+                  </article>
                 </li>
+
+                <li class="cruises__item">
+                  <article class="cruises__article">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/contents/image-odysseus-tablet.webp 1x, image-odysseus-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-odysseus-mobile.webp 1x, img/contents/image-odysseus-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/contents/image-odysseus-desktop.webp 1x, image-odysseus-desktop@2x.webp 2x"> -->
+
+                      <source type="image/jpg" width="309" height="386" media="(max-width: 1023px)" srcset="img/contents/image-odysseus-tablet.jpg 1x, image-odysseus-tablet@2x.jpg 2x">
+                      <source type="image/jpg" width="270" height="386" media="(max-width: 767px)" srcset="img/contents/image-odysseus-mobile.jpg 1x, img/contents/image-odysseus-mobile@2x.jpg 2x">
+                      <img class="cruises__image" width="260" height="386" src="img/contents/image-odysseus-desktop.jpg" loading="lazy" alt="Круизный тур 'Одиссей'." srcset="img/contents/image-odysseus-desktop.jpg@2x.jpg 2x">
+                    </picture>
+                    <h3 class="cruises__article-heading">Круиз "Одиссей"</h3>
+                    <div class="cruises__info-container">
+                      <dl class="cruises__info">
+                        <dt>Маршрут</dt>
+                        <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</dd>
+                        <dt>Порт отправления</dt>
+                        <dd>Рио-Гранде</dd>
+                        <dt>Продолжительность</dt>
+                        <dd>15 дней</dd>
+                        <dt>Цена</dt>
+                        <dd>от&nbsp;10000&nbsp;$</dd>
+                      </dl>
+                      <a class="cruises__booking-btn  btn" href="#">Забронировать</a>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="cruises__item">
+                  <article class="cruises__article">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/contents/image-olympia-tablet.webp 1x, image-olympia-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-olympia-mobile.webp 1x, img/contents/image-olympia-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/contents/image-olympia-desktop.webp 1x, image-olympia-desktop@2x.webp 2x"> -->
+
+                      <source type="image/jpg" width="309" height="386" media="(max-width: 1023px)" srcset="img/contents/image-olympia-tablet.jpg 1x, image-olympia-tablet@2x.jpg 2x">
+                      <source type="image/jpg" width="270" height="386" media="(max-width: 767px)" srcset="img/contents/image-olympia-mobile.jpg 1x, img/contents/image-olympia-mobile@2x.jpg 2x">
+                      <img class="cruises__image" width="260" height="386" src="img/contents/image-olympia-desktop.jpg" loading="lazy" alt="Круизный тур 'Олимпия'." srcset="img/contents/image-olympia-desktop.jpg@2x.jpg 2x">
+                    </picture>
+                    <h3 class="cruises__article-heading">Круиз "Олимпия"</h3>
+                    <div class="cruises__info-container">
+                      <dl class="cruises__info">
+                        <dt>Маршрут</dt>
+                        <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</dd>
+                        <dt>Порт отправления</dt>
+                        <dd>Порту-Алегри</dd>
+                        <dt>Продолжительность</dt>
+                        <dd>28 дней</dd>
+                        <dt>Цена</dt>
+                        <dd>от&nbsp;21000&nbsp;$</dd>
+                      </dl>
+                      <a class="cruises__booking-btn  btn" href="#">Забронировать</a>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="cruises__item">leonor            <article class="cruises__article">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/contents/image-aurora-tablet.webp 1x, image-aurora-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-aurora-mobile.webp 1x, img/contents/image-aurora-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/contents/image-aurora-desktop.webp 1x, image-aurora-desktop@2x.webp 2x"> -->
+
+                      <source type="image/jpg" width="309" height="386" media="(max-width: 1023px)" srcset="img/contents/image-aurora-tablet.jpg 1x, image-aurora-tablet@2x.jpg 2x">
+                      <source type="image/jpg" width="270" height="386" media="(max-width: 767px)" srcset="img/contents/image-aurora-mobile.jpg 1x, img/contents/image-aurora-mobile@2x.jpg 2x">
+                      <img class="cruises__image" width="260" height="386" src="img/contents/image-aurora-desktop.jpg" loading="lazy" alt="Круизный тур 'Аврора'." srcset="img/contents/image-aurora-desktop.jpg@2x.jpg 2x">
+                    </picture>
+                    <h3 class="cruises__article-heading">Круиз "Аврора"</h3>
+                    <div class="cruises__info-container">
+                      <dl class="cruises__info">
+                        <dt>Маршрут</dt>
+                        <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида</dd>
+                        <dt>Порт отправления</dt>
+                        <dd>Мар-дель-Плата</dd>
+                        <dt>Продолжительность</dt>
+                        <dd>14 дней</dd>
+                        <dt>Цена</dt>
+                        <dd>от&nbsp;8000&nbsp;$</dd>
+                      </dl>
+                      <a class="cruises__booking-btn  btn" href="#">Забронировать</a>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="cruises__item">
+                  <article class="cruises__article">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/contents/image-leonor-tablet.webp 1x, image-leonor-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-leonor-mobile.webp 1x, img/contents/image-leonor-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/contents/image-leonor-desktop.webp 1x, image-leonor-desktop@2x.webp 2x"> -->
+
+                      <source type="image/jpg" width="309" height="386" media="(max-width: 1023px)" srcset="img/contents/image-leonor-tablet.jpg 1x, image-leonor-tablet@2x.jpg 2x">
+                      <source type="image/jpg" width="270" height="386" media="(max-width: 767px)" srcset="img/contents/image-leonor-mobile.jpg 1x, img/contents/image-leonor-mobile@2x.jpg 2x">
+                      <img class="cruises__image" width="260" height="386" src="img/contents/image-leonor-desktop.jpg" loading="lazy" alt="Круизный тур 'Леонор'." srcset="img/contents/image-leonor-desktop.jpg@2x.jpg 2x">
+                    </picture>
+                    <h3 class="cruises__article-heading">Круиз "Леонор"</h3>
+                    <div class="cruises__info-container">
+                      <dl class="cruises__info">
+                        <dt>Маршрут</dt>
+                        <dd>Чили&nbsp;&mdash; Антарктида</dd>
+                        <dt>Порт отправления</dt>
+                        <dd>Баия-Бланка</dd>
+                        <dt>Продолжительность</dt>
+                        <dd>18 дней</dd>
+                        <dt>Цена</dt>
+                        <dd>от&nbsp;16000&nbsp;$</dd>
+                      </dl>
+                      <a class="cruises__booking-btn  btn" href="#">Забронировать</a>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="cruises__item">
+                  <article class="cruises__article">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/contents/image-minion-1-tablet.webp 1x, image-minion-1-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-minion-1-mobile.webp 1x, img/contents/image-minion-1-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/contents/image-minion-1-desktop.webp 1x, image-minion-1-desktop@2x.webp 2x"> -->
+
+                      <source type="image/jpg" width="309" height="386" media="(max-width: 1023px)" srcset="img/contents/image-minion-1-tablet.jpg 1x, image-minion-1-tablet@2x.jpg 2x">
+                      <source type="image/jpg" width="270" height="386" media="(max-width: 767px)" srcset="img/contents/image-minion-1-mobile.jpg 1x, img/contents/image-minion-1-mobile@2x.jpg 2x">
+                      <img class="cruises__image" width="260" height="386" src="img/contents/image-minion-1-desktop.jpg" loading="lazy" alt="Круизный тур 'Минион - 1'." srcset="img/contents/image-minion-1-desktop.jpg@2x.jpg 2x">
+                    </picture>
+                    <h3 class="cruises__article-heading">Круиз "Минион - 1"</h3>
+                    <div class="cruises__info-container">
+                      <dl class="cruises__info">
+                        <dt>Маршрут</dt>
+                        <dd>Аргентина&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</dd>
+                        <dt>Порт отправления</dt>
+                        <dd>Буэнос-Айрес</dd>
+                        <dt>Продолжительность</dt>
+                        <dd>24 дня</dd>
+                        <dt>Цена</dt>
+                        <dd>от&nbsp;19500&nbsp;$</dd>
+                      </dl>
+                      <a class="cruises__booking-btn  btn" href="#">Забронировать</a>
+                    </div>
+                  </article>
+                </li>
+
               </ul>
             </div>
           </div>
         </section>
 
-        <section class="feedback" id="feedback">
-          <div class="feedback__wrapper">
-            <div class="feedback__flex-wrapper">
-              <div class="feedback__flex-container">
-                <h2 class="feedback__heading">Остались вопросы? Задайте их&nbsp;нам!</h2>
-                <p class="feedback__text-content">Мы&nbsp;проконсультируем Вас бесплатно</p>
-
-                <section class="feedback__form-wrapper">
-                  <h3 class="feedback__heading  visually-hidden">Форма обратной связи</h3>
-
-                  <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
-                    <div class="feedback-form__name">
-                      <input id="form-name-field" name="feedback-form-name" type="text" placeholder="Имя" required>
-                      <label class="visually-hidden" for="form-name-field">Впишите имя</label>
-                    </div>
-                    <div class="feedback-form__phone">
-                      <input id="form-phone-field" name="feedback-form-phone" type="tel" placeholder="Телефон" data-validate-phone pattern="^\+7\s?\(\d{3}\)\s?\d{3}\s?\d{2}\s?\d{2}$" required>
-                      <label class="visually-hidden" for="form-phone-field">Впишите ваш номер телефона</label>
-                    </div>
-                    <div class="feedback-form__question">
-                      <label class="visually-hidden" for="form-question-field">Напишите ваш вопрос</label>
-                      <textarea id="form-question-field" name="feedback-form-textarea" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-                    </div>
-                    <div class="feedback-form__accept-checkbox  checkbox">
-                      <input id="form-accept-checkbox-field" type="checkbox" name="feedback-form-accept-checkbox" value="feedback-form-accepted" required>
-                      <label for="form-accept-checkbox-field">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
-                    </div>
-                    <div class="feedback-form__button">
-                      <button type="submit">Задать вопрос</button>
-                    </div>
-                  </form>
-                </section>
-              </div>
+        <section class="booking">
+          <h2 class="booking__heading  visually-hidden">Форма обратной связи</h2>
+          <div class="booking__wrapper">
+            <div class="booking__container">
+              <h3 class="booking__heading  booking__heading--h3">Раннее бронирование</h3>
+              <p class="booking__text-context"></p>
+            </div>
+            <div class="booking__form-container">
+              <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
+                <h3 class="booking-form__heading  booking-form__heading--h3" aria-label="Перейти к заполнению формы.">Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
+                <div class="booking-form__name">
+                  <input id="form-name-field" name="form-name" type="text" placeholder="Имя" required>
+                  <label class="visually-hidden" for="form-name-field">Имя</label>
+                </div>
+                <div class="booking-form__phone">
+                  <input id="form-phone-field" name="form-phone" type="tel" placeholder="Телефон" data-validate-phone pattern="^\8\d{10}$" required>
+                  <label class="visually-hidden" for="form-phone-field">Телефон</label>
+                </div>
+                <div class="booking-form__email">
+                  <input id="form-email-field" name="form-email-field" type="email" placeholder="Email">
+                  <label class="visually-hidden" for="form-email-field">Email</label>
+                </div>
+                <div class="booking-form__checkbox">
+                  <input id="form-accept-checkbox-field" type="checkbox" name="feedback-form-accept-checkbox" value="feedback-form-accepted" required>
+                  <label for="form-accept-checkbox-field">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</label>
+                </div>
+                <div class="booking-form__button">
+                  <button type="submit">Оставить заявку</button>
+                </div>
+              </form>
             </div>
           </div>
+        </section>
+
+        <section class="contacts">
+          <h2 class="contacts__heading  visually-hidden">Контакты</h2>
+          <div class="contacts__wrapper"></div>
+            <div class="contacts__map-wrapper  map">
+              <h3 class="contacts__map-heading  visually-hidden">Интерактивная карта</h3>
+              <div class="map__container">
+                <!-- код карты -->
+              </div>
+            </div>
+            <div class="contacts__container">
+              <h3 class="contacts__promo-text">У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</h3>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <address class="contacts__address">
+                    <p class="contacts__address-text" aria-label="Мы находимся по адресу.">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
+                  </address>
+                </li>
+                <li class="contacts__item">
+                  <address class="contacts__telephone">
+                    <a class="contacts__telephone-link" href="tel:+78002000000" aria-label="Контактный номер телефона.">8-800-200-00-00</a>
+                  </address>
+                </li>
+              </ul>
+            </div>
         </section>
       </main>
 
@@ -222,163 +417,66 @@
       <footer class="main-footer  footer">
         <div class="container">
           <div class="main-footer__wrapper">
-            <div class="main-footer__logo-and-social">
-              <div class="main-footer__logo  logo-footer">
-                <a class="logo-footer__link">
-                  <svg class="logo-footer__image" width="215" height="55" aria-hidden="true" focusable="false">
-                    <use xlink:href="img/sprite_auto.svg#logo"></use>
-                  </svg>
-                </a>
-              </div>
-
-              <div class="main-footer__social  social">
-                <h2 class="visually-hidden">Социальные сети</h2>
-
-                <ul class="social__list">
-                  <li class="social__item">
-                    <a class="social__link" href="#">
-                      <svg class="social__icon  social__icon-ok" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true" focusable="false">
-                        <use xlink:href="img/sprite_auto.svg#icon-social-ok"></use>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на социальную сеть Одноклассники.</span>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a class="social__link" href="#">
-                      <svg class="social__icon  social__icon-ok" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true" focusable="false">
-                        <use xlink:href="img/sprite_auto.svg#icon-social-vk"></use>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на социальную сеть Вконтакте.</span>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a class="social__link" href="#">
-                      <svg class="social__icon  social__icon-ok" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true" focusable="false">
-                        <use xlink:href="img/sprite_auto.svg#icon-social-pinterest"></use>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на социальную сеть Pinterest.</span>
-                    </a>
-                  </li>
-
-                </ul>
-              </div>
+            <div class="main-footer__logo  logo-footer">
+              <a class="logo-footer__link">
+                <svg class="logo-footer__image" width="70" height="38" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite_auto.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="main-footer__nav-wrapper  footer-nav">
+              <h2 class="footer-nav__heading  visually-hidden">Навигация по сайту</h2>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="#">Преимущества</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="#">Направления</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="#">Ближайшие круизы</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="#">Контакты</a>
+                </li>
+              </ul>
             </div>
 
-            <div class="main-footer__nav  footer-nav  accordion" data-accordion>
-              <div class="footer-nav__wrapper">
-                <h2 class="footer-nav__heading" data-accordion-button>
-                  <button class="footer-nav__accordion-button  accordion__button" type="button">
-                    <span class="visually-hidden">Переключить блок меню</span>
-                  </button>
-                  Разделы сайта
-                </h2>
-                <ul class="footer-nav__list">
-                  <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">О&nbsp;Компании</a>
-                  </li>
-                  <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Продукты</a>
-                  </li>
-                  <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Производство печатных плат</a>
-                  </li>
-                  <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Монтаж печатных плат</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="main-footer__social-wrapper  social">
+              <h2 class="social__heading  visually-hidden">Социальные сети</h2>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="social__icon  social__icon-ok" width="12" height="20" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite_auto.svg#icon-social-ok"></use>
+                    </svg>
+                    <span class="visually-hidden">Ссылка на социальную сеть Одноклассники.</span>
+                  </a>
+                </li>
 
-              <div class="footer-nav__additional-list-wrapper">
-                <ul class="footer-nav__additional-list">
-                  <li class="footer-nav__additional-item">
-                    <a class="footer-nav__link" href="#">Комплектующие</a>
-                  </li>
-                  <li class="footer-nav__additional-item">
-                    <a class="footer-nav__link" href="#">Доставка</a>
-                  </li>
-                  <li class="footer-nav__additional-item">
-                    <a class="footer-nav__link" href="#">Контакты</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="social__icon  social__icon-zen" width="20" height="20" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite_auto.svg#icon-social-zen"></use>
+                    </svg>
+                    <span class="visually-hidden">Ссылка на Дзен.</span>
+                  </a>
+                </li>
 
-            <div class="main-footer__contacts  contacts  accordion" data-accordion>
-              <div class="contacts__nav-wrapper">
-                <h2 class="contacts__heading" data-accordion-button>
-                  <button class="contacts__accordion-button  accordion__button" type="button">
-                    <span class="visually-hidden">Переключить блок меню</span>
-                  </button>
-                  Наш офис
-                </h2>
-                <ul class="contacts__list">
-                  <li class="contacts__item">
-                    <a class="contacts__link" href="#">
-                      <address class="contacts__address">
-                        <p class="contacts__address-text">г.&nbsp;Мытищи, Олимпийский проспект, д.10</p>
-                      </address>
-                    </a>
-                  </li>
-                  <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+74955894050" aria-label="Связаться с нами по основному номеру телефона.">+7 (495) 589-40-50</a>
-                  </li>
-                  <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+79253895829" aria-label="Связаться с нами по дополнительному номеру телефона.">+7 (925) 389-58-29</a>
-                  </li>
-                  <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+79253647813" aria-label="Связаться с нами по дополнительному номеру телефона.">+7 (925) 364-78-13</a>
-                  </li>
-                </ul>
-              </div>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="social__icon  social__icon-reddit" width="20" height="20" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite_auto.svg#icon-social-reddit"></use>
+                    </svg>
+                    <span class="visually-hidden">Ссылка на социальную сеть Реддит.</span>
+                  </a>
+                </li>
+              </ul>
             </div>
 
           </div>
         </div>
       </footer>
-    </div>
-
-    <div class="modal modal--preload  modal--fit-content  modal--no-scale" data-modal="contact">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <button class="modal__close-btn  btn-reset" type="button" aria-label="Закрыть окно формы." data-close-modal>
-            <svg width="15" height="15" aria-hidden="true" focusable="false">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-
-          <h2 class="modal__heading">Закажите звонок</h2>
-          <p class="modal__text-content">Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
-
-          <section class="modal__form-wrapper">
-            <h3 class="modal__heading  visually-hidden">Форма обратной связи</h3>
-
-            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
-              <div class="modal-form__name">
-                <input id="modal-form-name-field" name="modal-form-name" type="text" placeholder="Имя" autofocus required>
-                <label class="visually-hidden" for="modal-form-name-field">Впишите имя</label>
-              </div>
-              <div class="modal-form__phone">
-                <input id="modal-form-phone-field" name="modal-form-phone" type="tel" placeholder="Телефон" data-validate-phone pattern="^\+7\s?\(\d{3}\)\s?\d{3}\s?\d{2}\s?\d{2}$" required>
-                <label class="visually-hidden" for="modal-form-phone-field">Впишите ваш номер телефона</label>
-              </div>
-              <div class="modal-form__question">
-                <label class="visually-hidden" for="modal-form-question-field">Напишите ваш вопрос</label>
-                <textarea name="modal-form-textarea" id="modal-form-question-field" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-              </div>
-              <div class="modal-form__accept-checkbox  checkbox">
-                <input id="modal-form-accept-checkbox-field" type="checkbox" name="modal-form-accept-checkbox" value="modal-form-accepted" required>
-                <label for="modal-form-accept-checkbox-field">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
-              </div>
-              <div class="modal-form__button">
-                <button type="submit">Отправить</button>
-              </div>
-            </form>
-          </section>
-        </div>
-      </div>
     </div>
 
     <script src="js/vendor.min.js"></script>
