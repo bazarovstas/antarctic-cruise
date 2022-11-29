@@ -10,9 +10,9 @@
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
+  // &--red {
+  //   background-color: ;
+  // }
 
   &:disabled {
     opacity: 0.5;

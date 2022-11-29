@@ -9,6 +9,10 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
 }
 
 html {
@@ -16,7 +20,7 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
+  font-family: $ff-montserrat;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -35,7 +39,7 @@ body {
 }
 
 a {
-  color: $color-default-black;
+  color: $color-default-white;
   text-decoration: none;
 }
 
