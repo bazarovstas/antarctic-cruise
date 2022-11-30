@@ -1,0 +1,137 @@
+@import "./variables.scss";
+
+.main-header {
+  width: 100%;
+  padding: 35px 0 35px 0;
+
+  background-color: $color-transparent;
+  z-index: 2;
+
+  @media (max-width: $vp-1023) {
+    padding: 30px 0 30px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 20px 0 20px 0;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 103px;
+
+  @media (max-width: $vp-1023) {
+    padding: 0 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 15px;
+  }
+}
+
+.main-header__logo-wrapper {
+  margin-right: auto;
+
+  @media (max-width: $vp-1023) {
+    margin-right: auto;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+// .main-header__nav-wrapper {
+//   display: grid;
+//   grid-template-columns: 29% 43% 25%;
+//   justify-content: space-evenly;
+//   align-items: center;
+//   row-gap: 20px;
+
+//   width: 100%;
+//   margin-left: 12%;
+
+//   @media (max-width: $vp-1023) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: flex-end;
+//     align-items: flex-start;
+//     column-gap: 0;
+//     row-gap: 15px;
+//   }
+
+//   @media (max-width: $vp-767) {
+//     align-items: flex-end;
+//   }
+// }
+
+// .main-header__nav-wrapper > * {
+//   justify-self: flex-start;
+// }
+
+// .main-header__email-wrapper,
+// .main-header__phone-wrapper {
+//   @media (max-width: $vp-1023) {
+//     width: 40px;
+//     height: 40px;
+//     margin-right: 20px;
+//   }
+// }
+
+// .main-header__phone-wrapper {
+//   @media (max-width: $vp-767) {
+//     margin-right: 10px;
+//   }
+// }
+
+// .main-header__email-link,
+// .main-header__phone-link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   column-gap: 15px;
+
+//   @media (max-width: $vp-1023) {
+//     width: 100%;
+//     height: 100%;
+//   }
+
+//   &:hover .main-header__email-text,
+//   &:hover .main-header__phone-text {
+//     color: $color-yellow;
+//   }
+
+//   &:hover .main-header__email-icon,
+//   &:hover .main-header__phone-icon {
+//     fill: $color-yellow;
+//   }
+// }
+
+// .main-header__email-icon,
+// .main-header__phone-icon {
+//   fill: $color-deep-sky-blue;
+// }
+
+// .main-header__email-text,
+// .main-header__phone-text {
+//   margin: 0;
+
+//   font-family: $ff-ptmono;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 18px;
+//   color: $color-default-white;
+
+//   user-select: none;
+
+//   @media (max-width: $vp-1023) {
+//     display: none;
+//   }
+// }
