@@ -654,6 +654,10 @@ button,
   padding: 0;
 }
 
+.logo-header__image {
+  fill: #f9fbfd;
+}
+
 .main-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;

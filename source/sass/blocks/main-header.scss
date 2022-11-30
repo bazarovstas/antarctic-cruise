@@ -47,6 +47,10 @@
   padding: 0;
 }
 
+.logo-header__image {
+  fill: $color-default-white;
+}
+
 
 // .main-header__nav-wrapper {
 //   display: grid;
@@ -102,36 +106,3 @@
 //     width: 100%;
 //     height: 100%;
 //   }
-
-//   &:hover .main-header__email-text,
-//   &:hover .main-header__phone-text {
-//     color: $color-yellow;
-//   }
-
-//   &:hover .main-header__email-icon,
-//   &:hover .main-header__phone-icon {
-//     fill: $color-yellow;
-//   }
-// }
-
-// .main-header__email-icon,
-// .main-header__phone-icon {
-//   fill: $color-deep-sky-blue;
-// }
-
-// .main-header__email-text,
-// .main-header__phone-text {
-//   margin: 0;
-
-//   font-family: $ff-ptmono;
-//   font-weight: 400;
-//   font-size: 16px;
-//   line-height: 18px;
-//   color: $color-default-white;
-
-//   user-select: none;
-
-//   @media (max-width: $vp-1023) {
-//     display: none;
-//   }
-// }
