@@ -1,0 +1,23 @@
+
+@import "./variables.scss";
+
+.footer-nav__list {
+  display: grid;
+  grid-template-columns: 21% 19% 29% 16%;
+  gap: 33px;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (max-width: $vp-1023) {
+    grid-template-columns: 23% 20% 30% 15%;
+    gap: 23px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}

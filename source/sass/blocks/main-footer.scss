@@ -1,2 +1,22 @@
 @import "./variables.scss";
 
+.main-footer__wrapper {
+  display: flex;
+  align-items: center;
+
+  max-width: 1366px;
+  min-height: 138px;
+  margin: 0 auto;
+  padding: 0 103px;
+
+  background-color: $color-default-black;
+
+  @media (max-width: $vp-1023) {
+    padding: 0 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 15px;
+  }
+}
+

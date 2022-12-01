@@ -1,0 +1,40 @@
+@import "./variables.scss";
+
+.logo-footer {
+  padding-right: 40px;
+}
+
+.logo-footer__link {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-footer__image {
+  fill: $color-default-white;
+}
+
+// .logo-footer {
+//   padding-bottom: 30px;
+
+//   @media (max-width: $vp-1023) {
+//     padding-bottom: 31px;
+//   }
+
+//   @media (max-width: $vp-767) {
+//     display: flex;
+//     justify-content: center;
+//     padding-bottom: 15px;
+//   }
+// }
+
+// .logo-footer__link {
+//   display: flex;
+
+//   @media (max-width: $vp-767) {
+//     margin-right: 5px;
+//   }
+// }
+
+// .logo-footer__link svg {
+//   fill: $color-default-white;
+// }
