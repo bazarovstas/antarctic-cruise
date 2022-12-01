@@ -1,11 +1,59 @@
 @import "./variables.scss";
 
-
 .main-nav__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 21% 19% 29% 16%;
+  gap: 33px;
 
+  width: 100%;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  @media (max-width: $vp-1023) {
+    grid-template-columns: 23% 20% 30% 15%;
+    gap: 23px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.main-nav__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+
+  @media (max-width: $vp-1023) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.main-nav__toogle {
+  display: none;
+
+  @media (max-width: $vp-767) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+.main-nav__toogle-closed {
+  stroke: $color-default-white;
+}
+
+.main-nav__toogle-open {
+  stroke: $color-default-white;
+
+  // отобразить крестик
+  @media (max-width: $vp-767) {
+    display: none;
+  }
 }
