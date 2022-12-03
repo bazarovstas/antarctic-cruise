@@ -810,6 +810,7 @@ button,
   line-height: 42px;
   color: #011c40;
   text-align: center;
+  cursor: default;
 }
 
 .advantages__list {
@@ -847,11 +848,110 @@ button,
   color: #011c40;
 }
 
+.cruises__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 95px 103px 120px 103px;
+}
+
+.cruises__heading {
+  margin: 0;
+  padding-bottom: 50px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #011c40;
+  text-align: center;
+  cursor: default;
+}
+
 .cruises__list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.cruises__item {
+  position: relative;
+  max-width: 260px;
+  min-height: 386px;
+}
+
+.cruises__item:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #011c40;
+}
+
+.cruises__article {
+  height: 100%;
+}
+
+.cruises__image {
+  position: absolute;
+  z-index: -1;
+}
+
+.cruises__article-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.cruises__item:hover .cruises__article-container {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.cruises__article-heading {
+  position: static;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fbfd;
+}
+
+.cruises__info-container {
+  display: none;
+}
+
+.cruises__item:hover .cruises__info-container {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.cruises__info dt {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.5px;
+  color: #f9fbfd;
+}
+
+.cruises__info dd {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.5px;
+  color: #d8d8d9;
+}
+
+.cruises__item:hover .cruises__article-heading {
+  position: absolute;
 }
 
 .main-footer__wrapper {
@@ -1199,6 +1299,10 @@ button,
     padding-right: 16px;
   }
 
+  .cruises__wrapper {
+    padding: 100px 45px;
+  }
+
   .cruises__list {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
@@ -1330,6 +1434,10 @@ button,
 
   .advantages__item--first {
     padding-right: 20px;
+  }
+
+  .cruises__wrapper {
+    padding: 65px 15px;
   }
 
   .cruises__list {

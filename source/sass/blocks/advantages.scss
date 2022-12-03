@@ -58,8 +58,9 @@
   font-size: 28px;
   line-height: 42px;
   color: $color-default-black;
-
   text-align: center;
+
+  cursor: default;
 
   @media (max-width: $vp-1023) {
     font-size: 26px;
