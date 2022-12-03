@@ -1,0 +1,126 @@
+@import "./variables.scss";
+
+.advantages {
+  min-height: 562px;
+
+  background-color: $color-default-black;
+  background-image: url("../img/backgrounds/bg-image-advantages-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $vp-1023) {
+    @include retina {
+      background-image: url("../img/backgrounds/bg-image-advantages-desktop@2x.jpg");
+    }
+  }
+
+  @media (max-width: $vp-1023) {
+    min-height: 588px;
+
+    background-image: url("../img/backgrounds/bg-image-advantages-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/backgrounds/bg-image-advantages-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    min-height: 997px;
+
+    background-image: url("../img/backgrounds/bg-image-advantages-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/backgrounds/bg-image-advantages-mobile@2x.jpg");
+    }
+  }
+}
+
+.advantages__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 120px 103px 120px 103px;
+
+  @media (max-width: $vp-1023) {
+    padding: 100px 45px 100px 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 65px 15px 85px 15px;
+  }
+}
+
+.advantages__heading {
+  margin: 0;
+  padding-bottom: 50px;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: $color-default-black;
+
+  text-align: center;
+
+  @media (max-width: $vp-1023) {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  gap: 40px;
+
+  margin: 0;
+  padding-left: 0;
+
+  list-style: none;
+
+  @media (max-width: $vp-1023) {
+
+  }
+
+  @media (max-width: $vp-767) {
+
+  }
+}
+
+.advantages__item {
+  padding: 30px 30px 50px 30px;
+
+  background-color: $color-default-white;
+
+  @media (max-width: $vp-1023) {
+    padding: 25px 20px;
+
+    &--first {
+      padding-right: 16px;
+    }
+  }
+}
+
+.advantages__item-title {
+  margin: 0;
+  padding: 20px 0 15px;
+
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  color: $color-default-black;
+}
+
+.advantages__item-description {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 13.5px;
+  line-height: 19.5px;
+  color: $color-default-black;
+}
