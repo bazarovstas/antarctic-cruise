@@ -39,14 +39,14 @@
 .advantages__wrapper {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 120px 103px 120px 103px;
+  padding: 120px 103px;
 
   @media (max-width: $vp-1023) {
-    padding: 100px 45px 100px 45px;
+    padding: 100px 45px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 65px 15px 85px 15px;
+    padding: 65px 15px;
   }
 }
 
@@ -83,12 +83,9 @@
 
   list-style: none;
 
-  @media (max-width: $vp-1023) {
-
-  }
-
   @media (max-width: $vp-767) {
-
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
   }
 }
 
@@ -102,6 +99,12 @@
 
     &--first {
       padding-right: 16px;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    &--first {
+      padding-right: 20px;
     }
   }
 }
