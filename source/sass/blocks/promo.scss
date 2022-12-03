@@ -1,0 +1,53 @@
+@import "./variables.scss";
+
+.promo__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 88px;
+  // align-items: center;
+
+  // max-width: 1366px;
+  // min-height: 138px;
+  margin: 0 auto;
+  padding: 120px 103px 145px 103px;
+
+  // background-color: $color-default-black;
+
+  @media (max-width: $vp-1023) {
+    padding: 0 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 15px;
+  }
+}
+
+.promo__layout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 512px;
+}
+
+.promo__heading {
+  margin: 0;
+  padding-bottom: 24px;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: $color-default-black;
+
+  cursor: default;
+}
+
+.promo__text-content {
+  margin: 0;
+
+  cursor: default;
+}
+
+.promo__image-wrapper {
+  flex-shrink: 0;
+}
