@@ -61,6 +61,8 @@
     height: 100%;
 
     background-color: $color-default-black;
+
+    // z-index: 0;
   }
 }
 
@@ -68,7 +70,7 @@
   height: 100%;
 }
 
-.cruises__image {
+.cruises__article-image {
   position: absolute;
 
   z-index: -1;
@@ -76,9 +78,10 @@
 
 .cruises__article-container {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
 
   height: 100%;
+  padding: 35px 25px 35px 25px;
 }
 
 .cruises__item:hover .cruises__article-container {
@@ -89,6 +92,7 @@
   position: static;
 
   margin: 0;
+  margin-top: auto;
 
   font-weight: 500;
   font-size: 18px;
@@ -98,26 +102,40 @@
   // z-index: 0;
 }
 
-.cruises__info-container {
-  display: none;
-}
-
-.cruises__item:hover .cruises__info-container {
-  display: block;
+.cruises__item:hover .cruises__article-info {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
 }
 
-.cruises__info dt {
+.cruises__article-info {
+  margin: 0;
+
+  word-break: break-word;
+
+  display: none;
+
+  height: 100%;
+  padding: 60px 25px 35px 25px;
+}
+
+.cruises__article-info dt {
+  padding: 10px 0 0 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 19.5px;
   color: $color-default-white;
 }
 
-.cruises__info dd {
+.cruises__article-info dd {
+  margin: 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 19.5px;
@@ -127,6 +145,18 @@
 .cruises__item:hover .cruises__article-heading {
   position: absolute;
 
-  // z-index: 0;
+  // padding: 0 15px 0 15px;
 }
 
+.cruises__article-container .cruises__article-booking-btn {
+  display: none;
+  justify-content: center;
+
+  margin-top: auto;
+}
+
+.cruises__item:hover .cruises__article-booking-btn {
+  display: block;
+
+  z-index: 1;
+}
