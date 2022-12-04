@@ -1,0 +1,82 @@
+@import "./variables.scss";
+
+.booking {
+  min-height: 555px;
+
+  background-color: $color-solitude;
+  background-image: url("../img/backgrounds/bg-image-booking-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $vp-1023) {
+    @include retina {
+      background-image: url("../img/backgrounds/bg-image-booking-desktop@2x.jpg");
+    }
+  }
+
+  @media (max-width: $vp-1023) {
+    min-height: 805px;
+
+    background-image: url("../img/backgrounds/bg-image-booking-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/backgrounds/bg-image-booking-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    min-height: 760px;
+
+    background-image: url("../img/backgrounds/bg-image-booking-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/backgrounds/bg-image-booking-mobile@2x.jpg");
+    }
+  }
+}
+
+.booking__wrapper {
+  display: flex;
+
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 50px 163px;
+
+  @media (max-width: $vp-1023) {
+    padding: 100px 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 65px 15px;
+  }
+}
+
+.booking__container {
+  align-self: center;
+}
+
+.booking__heading {
+  &--h3 {
+    margin: 0;
+    padding-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: $color-default-black;
+  }
+}
+
+.booking__text-context {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-black;
+}
+
+.booking__form-container {
+  width: 40.4%;
+}

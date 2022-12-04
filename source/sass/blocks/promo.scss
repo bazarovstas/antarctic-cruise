@@ -10,6 +10,8 @@
   margin: 0 auto;
   padding: 120px 103px 145px 103px;
 
+  background-color: $color-default-white;
+
   @media (max-width: $vp-1023) {
     display: grid;
     grid-template-columns: 1fr 1fr;
