@@ -871,7 +871,8 @@ button,
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  margin: 0;
+  max-width: 1130px;
+  margin: 0 auto;
   padding-left: 0;
   list-style: none;
 }
@@ -897,6 +898,7 @@ button,
 .cruises__article-image {
   position: absolute;
   z-index: -1;
+  height: 100%;
 }
 
 .cruises__article-container {
@@ -928,9 +930,6 @@ button,
 }
 
 .cruises__item:hover .cruises__article-info {
-  position: absolute;
-  top: 0;
-  left: 0;
   z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -943,11 +942,11 @@ button,
 }
 
 .cruises__article-info {
-  margin: 0;
-  word-break: break-word;
   display: none;
   height: 100%;
-  padding: 60px 25px 35px 25px;
+  margin: 0;
+  padding: 30px 0 30px 0;
+  word-break: break-word;
 }
 
 .cruises__article-info dt {
@@ -975,7 +974,9 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 100%;
   margin-top: auto;
+  text-align: center;
 }
 
 .cruises__item:hover .cruises__article-booking-btn {
@@ -1041,9 +1042,12 @@ button,
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 10px 20px;
-  color: #f9fbfd;
-  background-color: #2a5983;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011c40;
+  background-color: #f9fbfd;
   border: none;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
