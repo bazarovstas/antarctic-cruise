@@ -38,12 +38,18 @@
 
 .booking__wrapper {
   display: flex;
+  justify-content: space-between;
+  gap: 30px;
 
   max-width: 1366px;
   margin: 0 auto;
   padding: 50px 163px;
 
   @media (max-width: $vp-1023) {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
     padding: 100px 45px;
   }
 
@@ -54,6 +60,18 @@
 
 .booking__container {
   align-self: center;
+
+  @media (max-width: $vp-1023) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 60px;
+
+    @media (max-width: $vp-767) {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .booking__heading {
@@ -65,18 +83,48 @@
     font-size: 40px;
     line-height: 60px;
     color: $color-default-black;
+
+    @media (max-width: $vp-1023) {
+      font-size: 34px;
+      line-height: 51px;
+      text-align: center;
+    }
+
+    @media (max-width: $vp-767) {
+      font-size: 24px;
+      line-height: 31.2px;
+    }
   }
 }
 
 .booking__text-context {
+  max-width: 450px;
   margin: 0;
 
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: $color-default-black;
+
+  @media (max-width: $vp-1023) {
+    max-width: 403px;
+
+    text-align: center;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 260px;
+
+    font-size: 16px;
+    line-height: 22.4px;
+    word-break: keep-all;
+  }
 }
 
 .booking__form-container {
-  width: 40.4%;
+  width: 38.75%;
+
+  @media (max-width: $vp-1023) {
+    width: auto;
+  }
 }

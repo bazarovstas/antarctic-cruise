@@ -1000,6 +1000,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 30px;
   max-width: 1366px;
   margin: 0 auto;
   padding: 50px 163px;
@@ -1021,6 +1025,7 @@ button,
 }
 
 .booking__text-context {
+  max-width: 450px;
   margin: 0;
   font-weight: 400;
   font-size: 18px;
@@ -1029,7 +1034,7 @@ button,
 }
 
 .booking__form-container {
-  width: 40.4%;
+  width: 38.75%;
 }
 
 .booking-form {
@@ -1104,6 +1109,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 25px;
 }
 
 .booking-form__checkbox label {
@@ -1122,7 +1128,6 @@ button,
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  margin-bottom: 25px;
 }
 
 .booking-form__button button {
@@ -1540,7 +1545,44 @@ button,
   }
 
   .booking__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0;
     padding: 100px 45px;
+  }
+
+  .booking__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .booking__heading--h3 {
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+  }
+
+  .booking__text-context {
+    max-width: 403px;
+    text-align: center;
+  }
+
+  .booking__form-container {
+    width: auto;
   }
 
   .main-footer__wrapper {
@@ -1565,6 +1607,12 @@ button,
 
   .booking {
     background-image: url("../img/backgrounds/bg-image-booking-tablet@2x.jpg");
+  }
+}
+
+@media (max-width: 1023px) and (max-width: 767px) {
+  .booking__container {
+    margin-bottom: 40px;
   }
 }
 
@@ -1706,6 +1754,30 @@ button,
 
   .booking__wrapper {
     padding: 65px 15px;
+  }
+
+  .booking__heading--h3 {
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+
+  .booking__text-context {
+    max-width: 260px;
+    font-size: 16px;
+    line-height: 22.4px;
+    word-break: keep-all;
+  }
+
+  .booking-form {
+    padding: 40px 30px;
+  }
+
+  .booking-form__heading {
+    text-align: center;
+  }
+
+  .booking-form__checkbox label {
+    line-height: 12px;
   }
 
   .main-footer__wrapper {
