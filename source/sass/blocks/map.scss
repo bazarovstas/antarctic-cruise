@@ -3,12 +3,8 @@
 .map__no-js {
   position: relative;
 
-  min-width: 560px;
-  min-height: 306px;
-  max-width: 560px;
-  max-height: 306px;
-  // min-width: 280px;
-  // min-height: 153px;
+  min-width: 41vw;
+  min-height: 21.3vh;
 
   background-color: $color-solitude;
   background-image: url("../img/backgrounds/bg-image-map-no-js-desktop.png");
@@ -23,7 +19,8 @@
   }
 
   @media (max-width: $vp-1023) {
-    min-height: 805px;
+    min-width: 42.2vw;
+    min-height: 35vh;
 
     background-image: url("../img/backgrounds/bg-image-map-no-js-tablet.png");
 
@@ -33,7 +30,8 @@
   }
 
   @media (max-width: $vp-767) {
-    min-height: 760px;
+    min-width: 92vw;
+    min-height: 316px;
 
     background-image: url("../img/backgrounds/bg-image-map-no-js-mobile.png");
 
