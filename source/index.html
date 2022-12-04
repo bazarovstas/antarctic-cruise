@@ -392,10 +392,11 @@
 
         <section class="contacts">
           <h2 class="contacts__heading  visually-hidden">Контакты</h2>
-          <div class="contacts__wrapper"></div>
+          <div class="contacts__wrapper">
             <div class="contacts__map-wrapper  map">
               <h3 class="contacts__map-heading  visually-hidden">Интерактивная карта</h3>
-              <div class="map__container">
+              <div class="map__container map--no-js">
+                <div class="map__no-js"></div>
                 <!-- код карты -->
               </div>
             </div>
@@ -408,12 +409,13 @@
                   </address>
                 </li>
                 <li class="contacts__item">
-                  <address class="contacts__telephone">
-                    <a class="contacts__telephone-link" href="tel:+78002000000" aria-label="Контактный номер телефона.">8-800-200-00-00</a>
+                  <address class="contacts__phone">
+                    <a class="contacts__phone-link" href="tel:+78002000000" aria-label="Контактный номер телефона.">8-800-200-00-00</a>
                   </address>
                 </li>
               </ul>
             </div>
+          </div>
         </section>
       </main>
 

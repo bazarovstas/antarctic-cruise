@@ -1,0 +1,57 @@
+@import "./variables.scss";
+
+.map__no-js {
+  position: relative;
+
+  min-width: 560px;
+  min-height: 306px;
+  max-width: 560px;
+  max-height: 306px;
+  // min-width: 280px;
+  // min-height: 153px;
+
+  background-color: $color-solitude;
+  background-image: url("../img/backgrounds/bg-image-map-no-js-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $vp-1023) {
+    @include retina {
+      background-image: url("../img/backgrounds/bg-image-map-no-js-desktop@2x.png");
+    }
+  }
+
+  @media (max-width: $vp-1023) {
+    min-height: 805px;
+
+    background-image: url("../img/backgrounds/bg-image-map-no-js-tablet.png");
+
+    @include retina {
+      background-image: url("../img/backgrounds/bg-image-map-no-js-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    min-height: 760px;
+
+    background-image: url("../img/backgrounds/bg-image-map-no-js-mobile.png");
+
+    @include retina {
+      background-image: url("../img/backgrounds/bg-image-map-no-js-mobile@2x.png");
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 22%;
+    left: 45%;
+
+    width: 18px;
+    height: 22px;
+
+    background-image: url("../img/sprite/icon-pin.svg");
+    background-repeat: no-repeat;
+  }
+}
