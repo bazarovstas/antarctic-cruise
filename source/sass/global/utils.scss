@@ -54,3 +54,10 @@
   /* stylelint-disable-next-line */
   transition: none !important;
 }
+
+.mobile-menu-open {
+  @media (max-width: $vp-767) {
+    /* stylelint-disable-next-line */
+    padding-left: 15.65% !important;
+  }
+}
