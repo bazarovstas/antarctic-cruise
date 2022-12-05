@@ -33,11 +33,23 @@
   }
 }
 
+.main-nav--nojs .main-header__wrapper {
+  @media (max-width: $vp-767) {
+    display: block;
+  }
+}
+
 .main-header__logo-wrapper {
   margin-right: auto;
 
   @media (max-width: $vp-1023) {
     margin-right: auto;
+  }
+}
+
+.main-nav--nojs .main-header__logo-wrapper {
+  @media (max-width: $vp-767) {
+    padding-left: 15.5%;
   }
 }
 

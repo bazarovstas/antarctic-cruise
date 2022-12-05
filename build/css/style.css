@@ -691,10 +691,11 @@ button,
   display: none;
 }
 
-.main-nav__toogle-closed {
-  stroke: #f9fbfd;
+.main-nav--nojs .main-nav__toogle {
+  display: none;
 }
 
+.main-nav__toogle-closed,
 .main-nav__toogle-open {
   stroke: #f9fbfd;
 }
@@ -1751,9 +1752,23 @@ button,
     padding: 0 15px;
   }
 
+  .main-nav--nojs .main-header__wrapper {
+    display: block;
+  }
+
+  .main-nav--nojs .main-header__logo-wrapper {
+    padding-left: 15.5%;
+  }
+
   .logo-header__image {
     width: 42px;
     height: 22px;
+  }
+
+  .main-nav--open .logo-header__image {
+    z-index: 1;
+    display: block;
+    fill: #011c40;
   }
 
   .main-nav--open::before {
@@ -1781,6 +1796,23 @@ button,
     top: 85px;
   }
 
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    padding-top: 40px;
+    padding-left: 15.5%;
+  }
+
+  .main-nav--nojs .main-nav__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 89.1%;
+    height: 280px;
+    background-color: #f9fbfd;
+  }
+
   .main-nav__list {
     display: block;
   }
@@ -1789,11 +1821,13 @@ button,
     padding-left: 10px;
   }
 
-  .main-nav--open .main-nav__item {
+  .main-nav--open .main-nav__item,
+  .main-nav--nojs .main-nav__item {
     margin-bottom: 23px;
   }
 
-  .main-nav--open .main-nav__link {
+  .main-nav--open .main-nav__link,
+  .main-nav--nojs .main-nav__link {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -1815,25 +1849,20 @@ button,
     cursor: pointer;
   }
 
-  .main-nav--open svg {
-    z-index: 1;
-    stroke: #011c40;
+  .main-nav--open .main-nav__toogle-closed,
+  .main-nav--closed .main-nav__toogle-open {
+    display: none;
   }
 
   .main-nav--closed .main-nav__toogle-closed {
     display: block;
   }
 
-  .main-nav--open .main-nav__toogle-closed {
-    display: none;
-  }
-
   .main-nav--open .main-nav__toogle-open {
+    z-index: 1;
     display: block;
-  }
-
-  .main-nav--closed .main-nav__toogle-open {
-    display: none;
+    stroke: #011c40;
+    fill: #011c40;
   }
 
   .main {
@@ -1842,9 +1871,19 @@ button,
     background-image: url("../img/backgrounds/bg-image-main-mobile.jpg");
   }
 
+  .main-nav--nojs .main {
+    min-height: 790px;
+    margin-top: -290px;
+  }
+
   .main__wrapper {
     min-height: 500px;
     padding: 57% 15px 14% 15px;
+  }
+
+  .main-nav--nojs .main__wrapper {
+    min-height: 790px;
+    padding: 100% 15px 14% 15px;
   }
 
   .main h1,

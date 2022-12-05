@@ -39,6 +39,13 @@
   }
 }
 
+.main-nav--nojs .main {
+  @media (max-width: $vp-767) {
+    min-height: 790px;
+    margin-top: -290px;
+  }
+}
+
 .main__wrapper {
   max-width: 1366px;
   min-height: 650px;
@@ -53,6 +60,13 @@
   @media (max-width: $vp-767) {
     min-height: 500px;
     padding: 57% 15px 14% 15px;
+  }
+}
+
+.main-nav--nojs .main__wrapper {
+  @media (max-width: $vp-767) {
+    min-height: 790px;
+    padding: 100% 15px 14% 15px;
   }
 }
 

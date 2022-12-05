@@ -11,3 +11,13 @@
     height: 22px;
   }
 }
+
+.main-nav--open .logo-header__image {
+  @media (max-width: $vp-767) {
+    z-index: 1;
+
+    display: block;
+
+    fill: $color-default-black;
+  }
+}
