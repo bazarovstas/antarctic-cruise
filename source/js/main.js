@@ -1,11 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {mobileMenuToogle} from './modules/mobile-menu-toogle';
+import {mobileMenuToggle} from './modules/mobile-menu-toggle';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-  mobileMenuToogle();
+  mobileMenuToggle();
   // Utils
   // ---------------------------------
 

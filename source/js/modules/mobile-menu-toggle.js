@@ -1,4 +1,4 @@
-function mobileMenuToogle() {
+function mobileMenuToggle() {
   let nav = document.querySelector('.main-header');
   let main = document.querySelector('.main-container');
   let toggle = document.querySelector('.main-nav__toogle');
@@ -31,4 +31,4 @@ function mobileMenuToogle() {
   });
 }
 
-export {mobileMenuToogle};
+export {mobileMenuToggle};

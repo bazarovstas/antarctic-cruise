@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+.checkbox input {
+  position: absolute;
+  z-index: -10;
+  opacity: 0;
+}
+
+.checkbox label {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 15px 1fr;
+  column-gap: 10px;
+
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox input + label::before {
+  content: "";
+  display: inline-block;
+
+  width: 18px;
+  height: 18px;
+  margin-right: 11px;
+
+  background-color: $color-default-white;
+  outline: 1px solid $color-default-white;
+  cursor: pointer;
+}
+
+.checkbox input:checked + label::before {
+  background-image: url("../img/svg/checkbox-checked.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+.checkbox input:not(:disabled) + label:hover::before {
+  // outline: 2px solid $color;
+}
+
+.checkbox input:focus + label::before,
+.checkbox input:active + label::before {
+  // outline: 2px solid $color;
+}
+
+.checkbox input:focus-visible + label::before {
+  // outline: 2px solid $color;
+}
+
+.checkbox input:disabled + label::before {
+  // background-color: ;
+}

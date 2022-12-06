@@ -1483,6 +1483,48 @@ button,
   pointer-events: auto;
 }
 
+.checkbox input {
+  position: absolute;
+  z-index: -10;
+  opacity: 0;
+}
+
+.checkbox label {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: 15px 1fr;
+  grid-template-columns: 15px 1fr;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox input + label::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 11px;
+  background-color: #f9fbfd;
+  outline: 1px solid #f9fbfd;
+  cursor: pointer;
+}
+
+.checkbox input:checked + label::before {
+  background-image: url("../img/svg/checkbox-checked.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
