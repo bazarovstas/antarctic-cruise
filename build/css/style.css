@@ -884,7 +884,7 @@ button,
 
 .cruises__item {
   position: relative;
-  min-height: 386px;
+  height: 386px;
 }
 
 .cruises__item:hover::before {
@@ -955,6 +955,7 @@ button,
   margin: 0;
   padding: 30px 0 30px 0;
   word-break: break-word;
+  overflow-y: auto;
 }
 
 .cruises__article-info dt {
@@ -1659,10 +1660,6 @@ button,
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     max-width: 100%;
-  }
-
-  .cruises__item {
-    min-height: 386px;
   }
 
   .cruises__article-container {
