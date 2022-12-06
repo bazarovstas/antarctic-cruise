@@ -2,6 +2,15 @@
 
 .logo-footer {
   padding-right: 40px;
+
+  @media (max-width: $vp-1023) {
+    padding-right: 25px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-right: 0;
+    padding-bottom: 25px;
+  }
 }
 
 .logo-footer__link {
@@ -11,30 +20,14 @@
 
 .logo-footer__image {
   fill: $color-default-white;
+
+  @media (max-width: $vp-1023) {
+    width: 38px;
+    height: 20px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 42px;
+    height: 20px;
+  }
 }
-
-// .logo-footer {
-//   padding-bottom: 30px;
-
-//   @media (max-width: $vp-1023) {
-//     padding-bottom: 31px;
-//   }
-
-//   @media (max-width: $vp-767) {
-//     display: flex;
-//     justify-content: center;
-//     padding-bottom: 15px;
-//   }
-// }
-
-// .logo-footer__link {
-//   display: flex;
-
-//   @media (max-width: $vp-767) {
-//     margin-right: 5px;
-//   }
-// }
-
-// .logo-footer__link svg {
-//   fill: $color-default-white;
-// }

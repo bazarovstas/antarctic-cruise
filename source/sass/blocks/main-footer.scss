@@ -12,11 +12,24 @@
   background-color: $color-default-black;
 
   @media (max-width: $vp-1023) {
+    min-height: 120px;
     padding: 0 45px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 0 15px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    min-height: 283px;
+    padding: 40px 15px;
   }
 }
 
+.main-footer__social-wrapper {
+  margin-left: auto;
+
+  @media (max-width: $vp-767) {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}

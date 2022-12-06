@@ -3,7 +3,7 @@
 
 .footer-nav__list {
   display: grid;
-  grid-template-columns: 21% 19% 29% 16%;
+  grid-template-columns: 21% 19% 30% 16%;
   gap: 33px;
 
   width: 100%;
@@ -13,11 +13,26 @@
   list-style: none;
 
   @media (max-width: $vp-1023) {
-    grid-template-columns: 23% 20% 30% 15%;
+    grid-template-columns: 23% 20% 31% 15%;
     gap: 23px;
   }
 
   @media (max-width: $vp-767) {
-    display: none;
+    grid-template-columns: 1fr;
+    gap: 15px;
+
+    margin-bottom: 20px;
+  }
+}
+
+.footer-nav__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: $color-default-white;
+
+  @media (max-width: $vp-1023) {
+    font-size: 12px;
+    line-height: 14.6px;
   }
 }
