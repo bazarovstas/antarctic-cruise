@@ -12,7 +12,8 @@
   }
 }
 
-.main-nav--open .logo-header__image {
+.main-nav--open .logo-header__image,
+.main-nav--nojs .logo-header__image {
   @media (max-width: $vp-767) {
     z-index: 1;
 
