@@ -2,6 +2,7 @@
 // ---------------------------------
 
 // Default
+// ---------------------------------
 
 $color-default-black:               #011c40;
 $color-default-white:               #f9fbfd;
@@ -13,19 +14,17 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 $color-bahama-blue:                 #2a5983;
 $color-solitude:                    #e3ecf6;
 $color-quartz:                      #d8d8d9;
-
 $color-light-sky-blue:              #95c8ff;
 
 // Transparent
+// ---------------------------------
 
 $transparent-black-0-5:             rgba(0, 43, 102, 0.5);
 
 // Gradient
+// ---------------------------------
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-
-// $black-to-bottom-gradient:          linear-gradient(to bottom, $color-default-black 85%, $color-transparent 100%);
-
 
 // Typography
 // ---------------------------------

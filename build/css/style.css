@@ -717,7 +717,7 @@ button,
   padding-left: 95px;
 }
 
-.main h1,
+.main__container h1,
 .main__heading {
   margin: 0;
   padding-bottom: 15px;
@@ -728,7 +728,7 @@ button,
   cursor: default;
 }
 
-.main p,
+.main__container p,
 .main__text-content {
   margin: 0;
   padding: 0;
@@ -769,6 +769,7 @@ button,
   max-width: 512px;
 }
 
+.promo__layout-container h2,
 .promo__heading {
   margin: 0;
   padding-bottom: 24px;
@@ -779,6 +780,7 @@ button,
   cursor: default;
 }
 
+.promo__layout-container p,
 .promo__text-content {
   margin: 0;
   cursor: default;
@@ -808,6 +810,7 @@ button,
   padding: 120px 103px;
 }
 
+.advantages__wrapper h2,
 .advantages__heading {
   margin: 0;
   padding-bottom: 50px;
@@ -837,6 +840,7 @@ button,
   background-color: #f9fbfd;
 }
 
+.advantages__list h3,
 .advantages__item-title {
   margin: 0;
   padding: 20px 0 15px;
@@ -846,6 +850,7 @@ button,
   color: #011c40;
 }
 
+.advantages__list p,
 .advantages__item-description {
   margin: 0;
   font-weight: 400;
@@ -1021,6 +1026,7 @@ button,
   align-self: center;
 }
 
+.booking__container h3--h3,
 .booking__heading--h3 {
   margin: 0;
   padding-bottom: 20px;
@@ -1030,6 +1036,7 @@ button,
   color: #011c40;
 }
 
+.booking__container p,
 .booking__text-context {
   max-width: 450px;
   margin: 0;
@@ -1057,6 +1064,7 @@ button,
   background-color: #011c40;
 }
 
+.booking-form h3,
 .booking-form__heading {
   margin: 0;
   padding-bottom: 30px;
@@ -1531,6 +1539,7 @@ button,
   width: 18px;
   height: 18px;
   margin-right: 11px;
+  vertical-align: middle;
   background-color: #f9fbfd;
   outline: 1px solid #f9fbfd;
   cursor: pointer;
@@ -1645,14 +1654,14 @@ button,
     padding-left: 0;
   }
 
-  .main h1,
+  .main__container h1,
   .main__heading {
     padding-bottom: 10px;
     font-size: 50px;
     line-height: 61px;
   }
 
-  .main p,
+  .main__container p,
   .main__text-content {
     font-size: 18px;
     line-height: 22px;
@@ -1671,6 +1680,7 @@ button,
     max-width: 324px;
   }
 
+  .promo__layout-container h2,
   .promo__heading {
     font-size: 26px;
     line-height: 36.5px;
@@ -1693,6 +1703,7 @@ button,
     padding: 100px 45px;
   }
 
+  .advantages__wrapper h2,
   .advantages__heading {
     font-size: 26px;
     line-height: 39px;
@@ -1760,12 +1771,14 @@ button,
     margin-bottom: 60px;
   }
 
+  .booking__container h3--h3,
   .booking__heading--h3 {
     font-size: 34px;
     line-height: 51px;
     text-align: center;
   }
 
+  .booking__container p,
   .booking__text-context {
     max-width: 403px;
     text-align: center;
@@ -2009,13 +2022,13 @@ button,
     padding: 100% 15px 14% 15px;
   }
 
-  .main h1,
+  .main__container h1,
   .main__heading {
     font-size: 36px;
     line-height: 45px;
   }
 
-  .main p,
+  .main__container p,
   .main__text-content {
     font-size: 16px;
   }
@@ -2030,6 +2043,7 @@ button,
     max-width: 100%;
   }
 
+  .promo__layout-container h2,
   .promo__heading {
     font-size: 24px;
     line-height: 33.5px;
@@ -2053,6 +2067,7 @@ button,
     padding: 65px 15px;
   }
 
+  .advantages__wrapper h2,
   .advantages__heading {
     font-size: 24px;
     line-height: 36px;
@@ -2101,11 +2116,13 @@ button,
     padding: 65px 15px;
   }
 
+  .booking__container h3--h3,
   .booking__heading--h3 {
     font-size: 24px;
     line-height: 31.2px;
   }
 
+  .booking__container p,
   .booking__text-context {
     max-width: 260px;
     font-size: 16px;
@@ -2117,6 +2134,7 @@ button,
     padding: 40px 30px;
   }
 
+  .booking-form h3,
   .booking-form__heading {
     text-align: center;
   }
