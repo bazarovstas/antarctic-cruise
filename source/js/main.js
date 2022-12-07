@@ -1,11 +1,13 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {mobileMenuToggle} from './modules/mobile-menu-toggle';
+import {enableGoogleMap} from './modules/map';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
   mobileMenuToggle();
+  enableGoogleMap();
   // Utils
   // ---------------------------------
 

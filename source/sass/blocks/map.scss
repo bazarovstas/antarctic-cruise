@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.map__no-js {
+.map__no-js-container {
   position: relative;
 
   min-width: 41vw;
@@ -52,4 +52,31 @@
     background-image: url("../img/sprite/icon-pin.svg");
     background-repeat: no-repeat;
   }
+}
+
+.map__iframe {
+  min-width: 41vw;
+  min-height: 21.3vh;
+
+  @media (max-width: $vp-1023) {
+    min-width: 42.2vw;
+    min-height: 35vh;
+  }
+
+  @media (max-width: $vp-767) {
+    min-width: 92vw;
+    min-height: 316px;
+  }
+}
+
+.map__no-js .map__iframe {
+  display: none;
+}
+
+.map__js .map__iframe {
+  display: block;
+}
+
+.map__js .map__no-js-container {
+  display: none;
 }

@@ -1238,7 +1238,7 @@ button,
   padding-bottom: 23px;
 }
 
-.map__no-js {
+.map__no-js-container {
   position: relative;
   min-width: 41vw;
   min-height: 21.3vh;
@@ -1249,7 +1249,7 @@ button,
   background-size: cover;
 }
 
-.map__no-js::after {
+.map__no-js-container::after {
   content: "";
   position: absolute;
   bottom: 22%;
@@ -1258,6 +1258,23 @@ button,
   height: 22px;
   background-image: url("../img/sprite/icon-pin.svg");
   background-repeat: no-repeat;
+}
+
+.map__iframe {
+  min-width: 41vw;
+  min-height: 21.3vh;
+}
+
+.map__no-js .map__iframe {
+  display: none;
+}
+
+.map__js .map__iframe {
+  display: block;
+}
+
+.map__js .map__no-js-container {
+  display: none;
 }
 
 .main-footer__wrapper {
@@ -1579,7 +1596,7 @@ button,
     background-image: url("../img/backgrounds/bg-image-booking-desktop@2x.jpg");
   }
 
-  .map__no-js {
+  .map__no-js-container {
     background-image: url("../img/backgrounds/bg-image-map-no-js-desktop@2x.png");
   }
 }
@@ -1763,10 +1780,15 @@ button,
     padding: 100px 45px;
   }
 
-  .map__no-js {
+  .map__no-js-container {
     min-width: 42.2vw;
     min-height: 35vh;
     background-image: url("../img/backgrounds/bg-image-map-no-js-tablet.png");
+  }
+
+  .map__iframe {
+    min-width: 42.2vw;
+    min-height: 35vh;
   }
 
   .main-footer__wrapper {
@@ -1819,7 +1841,7 @@ button,
     background-image: url("../img/backgrounds/bg-image-booking-tablet@2x.jpg");
   }
 
-  .map__no-js {
+  .map__no-js-container {
     background-image: url("../img/backgrounds/bg-image-map-no-js-tablet@2x.png");
   }
 }
@@ -2128,10 +2150,15 @@ button,
     padding-bottom: 38px;
   }
 
-  .map__no-js {
+  .map__no-js-container {
     min-width: 92vw;
     min-height: 316px;
     background-image: url("../img/backgrounds/bg-image-map-no-js-mobile.png");
+  }
+
+  .map__iframe {
+    min-width: 92vw;
+    min-height: 316px;
   }
 
   .main-footer__wrapper {
@@ -2200,7 +2227,7 @@ button,
     background-image: url("../img/backgrounds/bg-image-booking-mobile@2x.jpg");
   }
 
-  .map__no-js {
+  .map__no-js-container {
     background-image: url("../img/backgrounds/bg-image-map-no-js-mobile@2x.png");
   }
 }
