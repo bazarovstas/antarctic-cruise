@@ -1886,7 +1886,7 @@ button,
     fill: #011c40;
   }
 
-  .main-nav--open::before {
+  .main-header.main-nav--open::before {
     content: "";
     position: absolute;
     top: 0;
@@ -1896,7 +1896,7 @@ button,
     background-color: #f9fbfd;
   }
 
-  .main-nav--open::after {
+  .main-header.main-nav--open::after {
     content: "";
     position: absolute;
     top: 0;

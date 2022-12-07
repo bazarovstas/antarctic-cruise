@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.main-nav {
+.main-header.main-nav {
   @media (max-width: $vp-767) {
     &--open {
       &::before {
