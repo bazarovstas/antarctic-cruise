@@ -7,7 +7,7 @@ import {enableGoogleMap} from './modules/map';
 
 window.addEventListener('DOMContentLoaded', () => {
   mobileMenuToggle();
-  enableGoogleMap();
+  // enableGoogleMap();
   // Utils
   // ---------------------------------
 

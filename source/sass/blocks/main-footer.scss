@@ -1,5 +1,9 @@
 @import "./variables.scss";
 
+.main-footer {
+  background-color: $color-default-black;
+}
+
 .main-footer__wrapper {
   display: flex;
   align-items: center;
