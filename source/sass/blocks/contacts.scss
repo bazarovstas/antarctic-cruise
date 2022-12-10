@@ -3,7 +3,7 @@
 .contacts__wrapper {
   display: flex;
   align-items: center;
-  gap: 8%;
+  gap: 8.5%;
 
   max-width: 1366px;
   margin: 0 auto;
@@ -26,14 +26,30 @@
 }
 
 .contacts__map-wrapper {
+  width: 48.3%;
+
+  @media (max-width: $vp-1023) {
+    width: 47.5%;
+  }
+
   @media (max-width: $vp-767) {
     order: 2;
+
+    width: auto;
   }
 }
 
 .contacts__container {
+  width: 43.1%;
+
+  @media (max-width: $vp-1023) {
+    width: 47.5%;
+  }
+
   @media (max-width: $vp-767) {
     order: 1;
+
+    width: 100%;
   }
 }
 
