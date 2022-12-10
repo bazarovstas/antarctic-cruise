@@ -740,15 +740,11 @@ button,
 }
 
 .promo__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 88px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 44% 48%;
+  grid-template-columns: 44% 48%;
+  gap: 8%;
   max-width: 1366px;
   margin: 0 auto;
   padding: 120px 103px 145px 103px;
@@ -789,6 +785,8 @@ button,
 .promo__image-wrapper {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  min-width: 324px;
+  min-height: 174px;
 }
 
 .promo__image {
@@ -958,7 +956,7 @@ button,
   display: none;
   height: 100%;
   margin: 0;
-  padding: 30px 0 30px 0;
+  padding: 5px 0 30px 0;
   word-break: break-word;
   overflow-y: auto;
 }
@@ -980,7 +978,7 @@ button,
 }
 
 .cruises__item:hover .cruises__article-heading {
-  position: absolute;
+  position: relative;
 }
 
 .cruises__article-container .cruises__article-booking-btn {
@@ -991,6 +989,7 @@ button,
   width: 100%;
   margin-top: auto;
   text-align: center;
+  word-break: break-all;
 }
 
 .cruises__item:hover .cruises__article-booking-btn {
@@ -1047,6 +1046,8 @@ button,
 }
 
 .booking__form-container {
+  max-width: 403px;
+  min-width: 300px;
   width: 38.75%;
 }
 
@@ -1683,11 +1684,9 @@ button,
   }
 
   .promo__wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    -ms-grid-columns: 48% 48%;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
     padding: 100px 45px;
   }
 
@@ -2083,7 +2082,7 @@ button,
   }
 
   .advantages {
-    min-height: 997px;
+    min-height: auto;
     background-image: url("../img/backgrounds/bg-image-advantages-mobile.jpg");
   }
 

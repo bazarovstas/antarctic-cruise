@@ -1,10 +1,9 @@
 @import "./variables.scss";
 
 .promo__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 88px;
+  display: grid;
+  grid-template-columns: 44% 48%;
+  gap: 8%;
 
   max-width: 1366px;
   margin: 0 auto;
@@ -13,9 +12,8 @@
   background-color: $color-default-white;
 
   @media (max-width: $vp-1023) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
 
     padding: 100px 45px;
   }
@@ -75,6 +73,9 @@
 
 .promo__image-wrapper {
   flex-shrink: 0;
+
+  min-width: 324px;
+  min-height: 174px;
 
   @media (max-width: $vp-1023) {
     margin-right: 5px;

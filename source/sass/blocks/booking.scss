@@ -124,6 +124,8 @@
 }
 
 .booking__form-container {
+  max-width: 403px;
+  min-width: 300px;
   width: 38.75%;
 
   @media (max-width: $vp-1023) {
