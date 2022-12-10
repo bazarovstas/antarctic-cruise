@@ -630,6 +630,7 @@ button,
 }
 
 .main-header {
+  position: absolute;
   width: 100%;
   padding: 35px 0 35px 0;
   background-color: rgba(255, 255, 255, 0);
@@ -649,6 +650,11 @@ button,
 }
 
 .main-header__logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   margin-right: auto;
 }
 
@@ -698,7 +704,6 @@ button,
 
 .main {
   min-height: 650px;
-  margin-top: -108px;
   background-color: #2a5983;
   background-image: url("../img/backgrounds/bg-image-main-desktop.jpg");
   background-repeat: no-repeat;
@@ -1244,6 +1249,7 @@ button,
 
 .contacts__address-text,
 .contacts__phone-link {
+  display: block;
   margin: 0;
   margin-left: 28px;
   padding: 0;
