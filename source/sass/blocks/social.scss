@@ -48,3 +48,7 @@
     height: 16px;
   }
 }
+
+.social__link:hover .social__icon {
+  fill: $color-caramel;
+}

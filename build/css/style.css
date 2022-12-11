@@ -689,8 +689,14 @@ button,
   line-height: 19.5px;
 }
 
+.main-nav__link:hover {
+  color: #ffd694;
+}
+
 .main-nav__toogle {
   display: none;
+  width: 30px;
+  height: 30px;
 }
 
 .main-nav--nojs .main-nav__toogle {
@@ -700,6 +706,11 @@ button,
 .main-nav__toogle-closed,
 .main-nav__toogle-open {
   stroke: #f9fbfd;
+}
+
+.main-nav__toogle:hover .main-nav__toogle-closed,
+.main-nav__toogle:hover .main-nav__toogle-open {
+  stroke: #ffd694;
 }
 
 .main {
@@ -843,6 +854,14 @@ button,
   background-color: #f9fbfd;
 }
 
+.advantages__item:hover {
+  background-color: #011c40;
+}
+
+.advantages__item:hover .advantages__icon {
+  fill: #f9fbfd;
+}
+
 .advantages__list h3,
 .advantages__item-title {
   margin: 0;
@@ -851,6 +870,11 @@ button,
   font-size: 17px;
   line-height: 25px;
   color: #011c40;
+  cursor: default;
+}
+
+.advantages__item:hover .advantages__item-title {
+  color: #f9fbfd;
 }
 
 .advantages__list p,
@@ -860,6 +884,11 @@ button,
   font-size: 13.5px;
   line-height: 19.5px;
   color: #011c40;
+  cursor: default;
+}
+
+.advantages__item:hover .advantages__item-description {
+  color: #f9fbfd;
 }
 
 .cruises__wrapper {
@@ -943,6 +972,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #f9fbfd;
+  cursor: default;
 }
 
 .cruises__item:hover .cruises__article-info {
@@ -972,6 +1002,7 @@ button,
   font-size: 14px;
   line-height: 19.5px;
   color: #f9fbfd;
+  cursor: default;
 }
 
 .cruises__article-info dd {
@@ -980,6 +1011,7 @@ button,
   font-size: 14px;
   line-height: 19.5px;
   color: #d8d8d9;
+  cursor: default;
 }
 
 .cruises__item:hover .cruises__article-heading {
@@ -1038,6 +1070,7 @@ button,
   font-size: 40px;
   line-height: 60px;
   color: #011c40;
+  cursor: default;
 }
 
 .booking__container p,
@@ -1048,6 +1081,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #011c40;
+  cursor: default;
 }
 
 .booking__form-container {
@@ -1078,6 +1112,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #f9fbfd;
+  cursor: default;
 }
 
 .booking-form__name input,
@@ -1209,6 +1244,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #011c40;
+  cursor: default;
 }
 
 .contacts__list {
@@ -1219,6 +1255,7 @@ button,
 
 .contacts__address {
   position: relative;
+  cursor: default;
 }
 
 .contacts__address::before {
@@ -1259,6 +1296,10 @@ button,
 
 .contacts__address-text {
   padding-bottom: 23px;
+}
+
+.contacts__phone-link:hover {
+  color: #74a6d2;
 }
 
 .map__no-js-container {
@@ -1366,6 +1407,10 @@ button,
   color: #f9fbfd;
 }
 
+.footer-nav__link:hover {
+  color: #ffd694;
+}
+
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1402,6 +1447,10 @@ button,
 
 .social__icon {
   fill: #f9fbfd;
+}
+
+.social__link:hover .social__icon {
+  fill: #ffd694;
 }
 
 .btn {
@@ -2014,6 +2063,11 @@ button,
     color: #011c40;
   }
 
+  .main-nav--open .main-nav__link:hover,
+  .main-nav--nojs .main-nav__link:hover {
+    color: #ffd694;
+  }
+
   .main-nav__toogle {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2094,6 +2148,8 @@ button,
   }
 
   .promo__image-wrapper {
+    min-width: auto;
+    min-height: auto;
     margin-right: 0;
   }
 

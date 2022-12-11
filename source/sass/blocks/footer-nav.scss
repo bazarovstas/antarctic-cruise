@@ -35,6 +35,10 @@
   line-height: 19.5px;
   color: $color-default-white;
 
+  &:hover {
+    color: $color-caramel;
+  }
+
   @media (max-width: $vp-1023) {
     font-size: 12px;
     line-height: 14.6px;

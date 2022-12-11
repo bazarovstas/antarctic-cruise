@@ -61,6 +61,8 @@
   font-size: 18px;
   line-height: 27px;
   color: $color-default-black;
+
+  cursor: default;
 }
 
 .contacts__list {
@@ -76,6 +78,8 @@
 
 .contacts__address {
   position: relative;
+
+  cursor: default;
 
   &::before {
     content: "";
@@ -122,4 +126,8 @@
 
 .contacts__address-text {
   padding-bottom: 23px;
+}
+
+.contacts__phone-link:hover {
+  color: lighten($color-bahama-blue, 30%);
 }

@@ -82,6 +82,8 @@
   }
 
   @media (max-width: $vp-767) {
+    min-width: auto;
+    min-height: auto;
     margin-right: 0;
   }
 }

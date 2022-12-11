@@ -85,6 +85,8 @@
     line-height: 60px;
     color: $color-default-black;
 
+    cursor: default;
+
     @media (max-width: $vp-1023) {
       font-size: 34px;
       line-height: 51px;
@@ -108,6 +110,8 @@
   line-height: 27px;
   color: $color-default-black;
 
+  cursor: default;
+
   @media (max-width: $vp-1023) {
     max-width: 403px;
 
@@ -119,6 +123,7 @@
 
     font-size: 16px;
     line-height: 22.4px;
+
     word-break: keep-all;
   }
 }

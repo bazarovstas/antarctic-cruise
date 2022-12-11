@@ -25,6 +25,8 @@
   line-height: 27px;
   color: $color-default-white;
 
+  cursor: default;
+
   @media (max-width: $vp-767) {
     text-align: center;
   }
