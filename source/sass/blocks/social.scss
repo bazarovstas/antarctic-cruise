@@ -3,7 +3,9 @@
 .social__list {
   display: flex;
   flex-wrap: wrap;
+  flex-shrink: 0;
 
+  max-width: 145px;
   margin: 0;
   padding: 0;
 

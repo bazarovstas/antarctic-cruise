@@ -11,7 +11,7 @@
   max-width: 1366px;
   min-height: 138px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding: 25px 103px;
 
   background-color: $color-default-black;
 
@@ -30,6 +30,8 @@
 }
 
 .main-footer__social-wrapper {
+  display: flex;
+
   margin-left: auto;
 
   @media (max-width: $vp-767) {

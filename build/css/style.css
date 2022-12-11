@@ -1317,16 +1317,19 @@ button,
   max-width: 1366px;
   min-height: 138px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding: 25px 103px;
   background-color: #011c40;
 }
 
 .main-footer__social-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: auto;
 }
 
 .logo-footer {
-  padding-right: 40px;
+  padding-right: 4.9%;
 }
 
 .logo-footer__link {
@@ -1343,7 +1346,13 @@ button,
   display: grid;
   -ms-grid-columns: 21% 19% 30% 16%;
   grid-template-columns: 21% 19% 30% 16%;
-  gap: 33px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 33px;
+  -moz-column-gap: 33px;
+  column-gap: 33px;
+  row-gap: 23px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -1363,6 +1372,9 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  max-width: 145px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1850,7 +1862,10 @@ button,
   .footer-nav__list {
     -ms-grid-columns: 23% 20% 31% 15%;
     grid-template-columns: 23% 20% 31% 15%;
-    gap: 23px;
+    -webkit-column-gap: 23px;
+    -moz-column-gap: 23px;
+    column-gap: 23px;
+    row-gap: 18px;
   }
 
   .footer-nav__link {
@@ -2241,7 +2256,10 @@ button,
   .footer-nav__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 15px;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+    row-gap: 10px;
     margin-bottom: 20px;
   }
 
