@@ -143,9 +143,6 @@
 .main-nav__toogle {
   display: none;
 
-  width: 30px;
-  height: 30px;
-
   @media (max-width: $vp-767) {
     display: flex;
     justify-content: flex-end;
@@ -175,6 +172,9 @@
 .main-nav--closed .main-nav__toogle-closed {
   @media (max-width: $vp-767) {
     display: block;
+
+    width: 24px;
+    height: 12px;
   }
 }
 

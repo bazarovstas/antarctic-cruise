@@ -695,8 +695,6 @@ button,
 
 .main-nav__toogle {
   display: none;
-  width: 30px;
-  height: 30px;
 }
 
 .main-nav--nojs .main-nav__toogle {
@@ -2010,7 +2008,7 @@ button,
 
 @media (max-width: 1023px) and (max-width: 767px) {
   .booking__container {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 }
 
@@ -2147,6 +2145,8 @@ button,
 
   .main-nav--closed .main-nav__toogle-closed {
     display: block;
+    width: 24px;
+    height: 12px;
   }
 
   .main-nav--open .main-nav__toogle-open {
@@ -2168,7 +2168,7 @@ button,
 
   .main__wrapper {
     min-height: 500px;
-    padding: 57% 15px 14% 15px;
+    padding: 55% 15px 14% 15px;
   }
 
   .main-nav--nojs .main__wrapper {
@@ -2190,11 +2190,13 @@ button,
   .promo__wrapper {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    padding: 65px 15px 85px 15px;
+    gap: 0;
+    padding: 58px 15px 85px 15px;
   }
 
   .promo__layout-container {
     max-width: 100%;
+    padding-bottom: 44px;
   }
 
   .promo__layout-container h2,
@@ -2220,11 +2222,12 @@ button,
   }
 
   .advantages__wrapper {
-    padding: 65px 15px;
+    padding: 56px 15px 64px;
   }
 
   .advantages__wrapper h2,
   .advantages__heading {
+    padding-bottom: 32px;
     font-size: 24px;
     line-height: 36px;
   }
@@ -2235,12 +2238,21 @@ button,
     gap: 30px;
   }
 
+  .advantages__item {
+    min-height: 249px;
+  }
+
   .advantages__item--first {
     padding-right: 20px;
   }
 
+  .advantages__list h3,
+  .advantages__item-title {
+    padding: 11px 0 10px;
+  }
+
   .cruises__wrapper {
-    padding: 65px 25px;
+    padding: 57px 25px 65px;
   }
 
   .cruises__heading {
@@ -2256,11 +2268,11 @@ button,
   }
 
   .cruises__article-container {
-    padding: 25px 25px;
+    padding: 25px 25px 18px;
   }
 
   .cruises__item:hover .cruises__article-container {
-    padding: 35px 25px;
+    padding: 28px 25px 35px;
   }
 
   .booking {
@@ -2269,11 +2281,12 @@ button,
   }
 
   .booking__wrapper {
-    padding: 65px 15px;
+    padding: 60px 15px 65px;
   }
 
   .booking__container h3--h3,
   .booking__heading--h3 {
+    padding-bottom: 11px;
     font-size: 24px;
     line-height: 31.2px;
   }
@@ -2286,13 +2299,29 @@ button,
     word-break: keep-all;
   }
 
+  .booking__form-container {
+    min-width: 290px;
+  }
+
   .booking-form {
-    padding: 40px 30px;
+    padding: 32px 30px 40px;
   }
 
   .booking-form h3,
   .booking-form__heading {
+    padding-bottom: 25px;
     text-align: center;
+  }
+
+  .booking-form__name input,
+  .booking-form__phone input,
+  .booking-form__email input {
+    min-height: 43px;
+    margin-bottom: 20px;
+  }
+
+  .booking-form__checkbox {
+    margin-bottom: 26px;
   }
 
   .booking-form__checkbox label {
@@ -2305,7 +2334,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 0;
-    padding: 65px 15px;
+    padding: 58px 15px 65px;
   }
 
   .contacts__map-wrapper {
@@ -2323,7 +2352,11 @@ button,
   }
 
   .contacts__list {
-    padding-bottom: 38px;
+    padding-bottom: 35px;
+  }
+
+  .contacts__address::before {
+    top: 4px;
   }
 
   .map__no-js-container {
@@ -2347,7 +2380,7 @@ button,
     -ms-flex-align: start;
     align-items: flex-start;
     min-height: 283px;
-    padding: 40px 15px;
+    padding: 36px 15px 40px;
   }
 
   .main-footer__social-wrapper {
@@ -2357,7 +2390,7 @@ button,
 
   .logo-footer {
     padding-right: 0;
-    padding-bottom: 25px;
+    padding-bottom: 16px;
   }
 
   .logo-footer__image {
@@ -2371,13 +2404,12 @@ button,
     -webkit-column-gap: 15px;
     -moz-column-gap: 15px;
     column-gap: 15px;
-    row-gap: 10px;
-    margin-bottom: 20px;
+    row-gap: 8px;
+    margin-bottom: 16px;
   }
 
   .social__item {
     margin-left: 0;
-    margin-right: 10px;
   }
 
   .modal__wrapper {
@@ -2391,6 +2423,16 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .checkbox label {
+    -webkit-column-gap: 13px;
+    -moz-column-gap: 13px;
+    column-gap: 13px;
+  }
+
+  .checkbox input + label::before {
+    margin-bottom: 3px;
   }
 }
 

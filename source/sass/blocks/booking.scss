@@ -54,7 +54,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 65px 15px;
+    padding: 60px 15px 65px;
   }
 }
 
@@ -71,7 +71,7 @@
     margin-bottom: 52px;
 
     @media (max-width: $vp-767) {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
   }
 }
@@ -98,6 +98,8 @@
     }
 
     @media (max-width: $vp-767) {
+      padding-bottom: 11px;
+
       font-size: 24px;
       line-height: 31.2px;
     }
@@ -139,5 +141,9 @@
 
   @media (max-width: $vp-1023) {
     width: auto;
+  }
+
+  @media (max-width: $vp-767) {
+    min-width: 290px;
   }
 }

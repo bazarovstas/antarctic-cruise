@@ -15,6 +15,10 @@
   background-color: transparent;
   cursor: pointer;
   user-select: none;
+
+  @media (max-width: $vp-767) {
+    column-gap: 13px;
+  }
 }
 
 .checkbox input + label::before {
@@ -29,6 +33,10 @@
   background-color: $color-default-white;
   outline: 1px solid $color-default-white;
   cursor: pointer;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 3px;
+  }
 }
 
 .checkbox input:checked + label::before {

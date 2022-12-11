@@ -20,8 +20,9 @@
 
   @media (max-width: $vp-767) {
     grid-template-columns: 100%;
+    gap: 0;
 
-    padding: 65px 15px 85px 15px;
+    padding: 58px 15px 85px 15px;
   }
 }
 
@@ -38,6 +39,7 @@
 
   @media (max-width: $vp-767) {
     max-width: 100%;
+    padding-bottom: 44px;
   }
 }
 

@@ -21,7 +21,7 @@
     flex-direction: column;
     gap: 0;
 
-    padding: 65px 15px;
+    padding: 58px 15px 65px;
   }
 }
 
@@ -76,7 +76,7 @@
   list-style: none;
 
   @media (max-width: $vp-767) {
-    padding-bottom: 38px;
+    padding-bottom: 35px;
   }
 }
 
@@ -96,6 +96,10 @@
 
     background-image: url("../img/sprite/icon-pin.svg");
     background-repeat: no-repeat;
+
+    @media (max-width: $vp-767) {
+      top: 4px;
+    }
   }
 }
 
