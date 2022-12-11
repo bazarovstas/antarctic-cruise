@@ -55,7 +55,7 @@
 
 .contacts__promo-text {
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 
   font-weight: 500;
   font-size: 18px;
@@ -84,7 +84,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 4px;
+    top: 2px;
     left: 0;
 
     width: 18px;
@@ -125,7 +125,7 @@
 }
 
 .contacts__address-text {
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 }
 
 .contacts__phone-link:hover {

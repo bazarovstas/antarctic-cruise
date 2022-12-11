@@ -61,6 +61,8 @@
 .booking__container {
   align-self: center;
 
+  margin-bottom: 10px;
+
   @media (max-width: $vp-1023) {
     display: flex;
     flex-direction: column;
@@ -78,7 +80,7 @@
 .booking__heading {
   &--h3 {
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 7px;
 
     font-weight: 700;
     font-size: 40px;

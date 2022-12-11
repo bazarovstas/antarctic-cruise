@@ -3,7 +3,7 @@
 .cruises__wrapper {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 95px 118px 120px 118px;
+  padding: 85px 118px 120px 118px;
 
   @media (max-width: $vp-1023) {
     padding: 100px 60px;
@@ -99,7 +99,7 @@
   flex-direction: column;
 
   height: 100%;
-  padding: 30px 30px;
+  padding: 30px 30px 24px;
 
   @media (max-width: $vp-1023) {
     padding: 35px 35px;
@@ -113,7 +113,7 @@
 .cruises__item:hover .cruises__article-container {
   align-items: flex-start;
 
-  padding: 35px 25px 35px 25px;
+  padding: 27px 25px 35px 25px;
 
   // transition: $trans-default;
 
