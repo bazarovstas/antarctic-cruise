@@ -42,7 +42,7 @@
   padding: 112px 103px;
 
   @media (max-width: $vp-1023) {
-    padding: 100px 45px;
+    padding: 90px 45px;
   }
 
   @media (max-width: $vp-767) {
@@ -85,6 +85,10 @@
 
   list-style: none;
 
+  @media (max-width: $vp-1023) {
+    gap: 30px;
+  }
+
   @media (max-width: $vp-767) {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
@@ -101,7 +105,7 @@
   }
 
   @media (max-width: $vp-1023) {
-    padding: 25px 20px;
+    padding: 25px 20px 23px;
 
     &--first {
       padding-right: 16px;
@@ -111,6 +115,25 @@
   @media (max-width: $vp-767) {
     &--first {
       padding-right: 20px;
+    }
+  }
+}
+
+.advantages__icon {
+  @media (max-width: $vp-1023) {
+    &--cruiser {
+      width: 21px;
+      height: 26px;
+    }
+
+    &--double-check {
+      width: 27px;
+      height: 26px;
+    }
+
+    &--boat {
+      width: 36px;
+      height: 26px;
     }
   }
 }
@@ -130,6 +153,13 @@
   color: $color-default-black;
 
   cursor: default;
+
+  @media (max-width: $vp-1023) {
+    padding: 11px 0;
+
+    font-size: 18px;
+    line-height: 25.2px;
+  }
 }
 
 .advantages__item:hover .advantages__item-title {

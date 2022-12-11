@@ -13,9 +13,9 @@
 
   @media (max-width: $vp-1023) {
     grid-template-columns: 48% 48%;
-    gap: 4%;
+    gap: 3.5%;
 
-    padding: 100px 45px;
+    padding: 90px 45px 94px;
   }
 
   @media (max-width: $vp-767) {
@@ -44,7 +44,7 @@
 .promo__layout-container h2,
 .promo__heading {
   margin: 0;
-  padding-bottom: 24px;
+  padding-bottom: 15px;
 
   font-weight: 600;
   font-size: 28px;
@@ -78,13 +78,13 @@
   min-height: 174px;
 
   @media (max-width: $vp-1023) {
-    margin-right: 5px;
+    margin: 10px 3px 0 0;
   }
 
   @media (max-width: $vp-767) {
     min-width: auto;
     min-height: auto;
-    margin-right: 0;
+    margin: 0;
   }
 }
 

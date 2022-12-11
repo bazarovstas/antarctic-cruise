@@ -12,7 +12,7 @@
   background-color: $color-default-white;
 
   @media (max-width: $vp-1023) {
-    gap: 5%;
+    gap: 4.7%;
 
     padding: 100px 45px;
   }
@@ -63,6 +63,10 @@
   color: $color-default-black;
 
   cursor: default;
+
+  @media (max-width: $vp-1023) {
+    padding-bottom: 27px;
+  }
 }
 
 .contacts__list {

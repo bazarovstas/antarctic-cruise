@@ -50,7 +50,7 @@
     align-items: center;
     gap: 0;
 
-    padding: 100px 45px;
+    padding: 87px 45px 100px;
   }
 
   @media (max-width: $vp-767) {
@@ -68,7 +68,7 @@
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 60px;
+    margin-bottom: 52px;
 
     @media (max-width: $vp-767) {
       margin-bottom: 40px;
@@ -90,6 +90,8 @@
     cursor: default;
 
     @media (max-width: $vp-1023) {
+      padding-bottom: 5px;
+
       font-size: 34px;
       line-height: 51px;
       text-align: center;

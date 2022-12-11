@@ -17,7 +17,6 @@
 
   @media (max-width: $vp-1023) {
     min-height: 638px;
-    margin-top: -80px;
 
     background-image: url("../img/backgrounds/bg-image-main-tablet.jpg");
 
@@ -28,7 +27,6 @@
 
   @media (max-width: $vp-767) {
     min-height: 500px;
-    margin-top: -62px;
 
     background-image: url("../img/backgrounds/bg-image-main-mobile.jpg");
 
@@ -53,7 +51,7 @@
 
   @media (max-width: $vp-1023) {
     min-height: 638px;
-    padding: 33% 45px 14% 45px;
+    padding: 35% 45px 14% 45px;
   }
 
   @media (max-width: $vp-767) {

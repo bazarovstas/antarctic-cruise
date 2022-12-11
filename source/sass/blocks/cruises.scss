@@ -6,7 +6,7 @@
   padding: 85px 118px 120px 118px;
 
   @media (max-width: $vp-1023) {
-    padding: 100px 60px;
+    padding: 90px 60px 99px;
   }
 
   @media (max-width: $vp-767) {
@@ -102,7 +102,7 @@
   padding: 30px 30px 24px;
 
   @media (max-width: $vp-1023) {
-    padding: 35px 35px;
+    padding: 29px 35px;
   }
 
   @media (max-width: $vp-767) {
@@ -118,7 +118,7 @@
   // transition: $trans-default;
 
   @media (max-width: $vp-1023) {
-    padding: 35px 35px;
+    padding: 28px 35px 35px;
   }
 
   @media (max-width: $vp-767) {
@@ -157,10 +157,14 @@
 
   word-break: break-word;
   overflow-y: auto;
+
+  @media (max-width: $vp-1023) {
+    padding: 4px 0 30px 0;
+  }
 }
 
 .cruises__article-info dt {
-  padding: 10px 0 0 0;
+  padding-top: 10px;
 
   font-weight: 500;
   font-size: 14px;
@@ -168,6 +172,10 @@
   color: $color-default-white;
 
   cursor: default;
+
+  @media (max-width: $vp-1023) {
+    padding-top: 12px;
+  }
 }
 
 .cruises__article-info dd {

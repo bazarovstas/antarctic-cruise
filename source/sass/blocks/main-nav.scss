@@ -31,9 +31,15 @@
 }
 
 .main-nav__wrapper {
+  @media (max-width: $vp-1023) {
+    margin-right: 3px;
+  }
+
   @media (max-width: $vp-767) {
     position: absolute;
     top: 85px;
+
+    margin-right: 0;
   }
 }
 

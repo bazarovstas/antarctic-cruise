@@ -784,7 +784,7 @@ button,
 .promo__layout-container h2,
 .promo__heading {
   margin: 0;
-  padding-bottom: 24px;
+  padding-bottom: 15px;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -997,7 +997,7 @@ button,
 }
 
 .cruises__article-info dt {
-  padding: 10px 0 0 0;
+  padding-top: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: 19.5px;
@@ -1724,6 +1724,10 @@ button,
     height: 20px;
   }
 
+  .main-nav__wrapper {
+    margin-right: 3px;
+  }
+
   .main-nav__list {
     -ms-grid-columns: 23% 20% 30% 15%;
     grid-template-columns: 23% 20% 30% 15%;
@@ -1737,13 +1741,12 @@ button,
 
   .main {
     min-height: 638px;
-    margin-top: -80px;
     background-image: url("../img/backgrounds/bg-image-main-tablet.jpg");
   }
 
   .main__wrapper {
     min-height: 638px;
-    padding: 33% 45px 14% 45px;
+    padding: 35% 45px 14% 45px;
   }
 
   .main__container {
@@ -1766,8 +1769,8 @@ button,
   .promo__wrapper {
     -ms-grid-columns: 48% 48%;
     grid-template-columns: 48% 48%;
-    gap: 4%;
-    padding: 100px 45px;
+    gap: 3.5%;
+    padding: 90px 45px 94px;
   }
 
   .promo__layout-container {
@@ -1781,7 +1784,7 @@ button,
   }
 
   .promo__image-wrapper {
-    margin-right: 5px;
+    margin: 10px 3px 0 0;
   }
 
   .promo__image {
@@ -1794,7 +1797,7 @@ button,
   }
 
   .advantages__wrapper {
-    padding: 100px 45px;
+    padding: 90px 45px;
   }
 
   .advantages__wrapper h2,
@@ -1803,16 +1806,42 @@ button,
     line-height: 39px;
   }
 
+  .advantages__list {
+    gap: 30px;
+  }
+
   .advantages__item {
-    padding: 25px 20px;
+    padding: 25px 20px 23px;
   }
 
   .advantages__item--first {
     padding-right: 16px;
   }
 
+  .advantages__icon--cruiser {
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantages__icon--double-check {
+    width: 27px;
+    height: 26px;
+  }
+
+  .advantages__icon--boat {
+    width: 36px;
+    height: 26px;
+  }
+
+  .advantages__list h3,
+  .advantages__item-title {
+    padding: 11px 0;
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+
   .cruises__wrapper {
-    padding: 100px 60px;
+    padding: 90px 60px 99px;
   }
 
   .cruises__heading {
@@ -1827,11 +1856,19 @@ button,
   }
 
   .cruises__article-container {
-    padding: 35px 35px;
+    padding: 29px 35px;
   }
 
   .cruises__item:hover .cruises__article-container {
-    padding: 35px 35px;
+    padding: 28px 35px 35px;
+  }
+
+  .cruises__article-info {
+    padding: 4px 0 30px 0;
+  }
+
+  .cruises__article-info dt {
+    padding-top: 12px;
   }
 
   .booking {
@@ -1848,7 +1885,7 @@ button,
     -ms-flex-align: center;
     align-items: center;
     gap: 0;
-    padding: 100px 45px;
+    padding: 87px 45px 100px;
   }
 
   .booking__container {
@@ -1862,11 +1899,12 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 52px;
   }
 
   .booking__container h3--h3,
   .booking__heading--h3 {
+    padding-bottom: 5px;
     font-size: 34px;
     line-height: 51px;
     text-align: center;
@@ -1883,7 +1921,7 @@ button,
   }
 
   .contacts__wrapper {
-    gap: 5%;
+    gap: 4.7%;
     padding: 100px 45px;
   }
 
@@ -1893,6 +1931,10 @@ button,
 
   .contacts__container {
     width: 47.5%;
+  }
+
+  .contacts__promo-text {
+    padding-bottom: 27px;
   }
 
   .map__no-js-container {
@@ -1913,7 +1955,8 @@ button,
   }
 
   .logo-footer {
-    padding-right: 25px;
+    margin-top: 5px;
+    padding-right: 3.6%;
   }
 
   .logo-footer__image {
@@ -1924,9 +1967,9 @@ button,
   .footer-nav__list {
     -ms-grid-columns: 23% 20% 31% 15%;
     grid-template-columns: 23% 20% 31% 15%;
-    -webkit-column-gap: 23px;
-    -moz-column-gap: 23px;
-    column-gap: 23px;
+    -webkit-column-gap: 21px;
+    -moz-column-gap: 21px;
+    column-gap: 21px;
     row-gap: 18px;
   }
 
@@ -1938,7 +1981,7 @@ button,
   .social__item {
     width: 30px;
     height: 30px;
-    margin-left: 10px;
+    margin-left: 3px;
   }
 
   .social__icon {
@@ -2028,6 +2071,7 @@ button,
   .main-nav__wrapper {
     position: absolute;
     top: 85px;
+    margin-right: 0;
   }
 
   .main-nav--open .main-nav__wrapper {
@@ -2114,7 +2158,6 @@ button,
 
   .main {
     min-height: 500px;
-    margin-top: -62px;
     background-image: url("../img/backgrounds/bg-image-main-mobile.jpg");
   }
 
@@ -2163,7 +2206,7 @@ button,
   .promo__image-wrapper {
     min-width: auto;
     min-height: auto;
-    margin-right: 0;
+    margin: 0;
   }
 
   .promo__image {
