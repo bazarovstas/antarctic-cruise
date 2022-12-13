@@ -44,3 +44,11 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
+.checkbox input:focus + label::before {
+  background-color: $color-caramel;
+}
+
+.checkbox input:focus-visible + label::before {
+  outline: 2px solid $color-default-white;
+}

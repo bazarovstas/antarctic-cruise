@@ -1631,6 +1631,14 @@ button,
   background-position: 50% 50%;
 }
 
+.checkbox input:focus + label::before {
+  background-color: #ffd694;
+}
+
+.checkbox input:focus-visible + label::before {
+  outline: 2px solid #f9fbfd;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
