@@ -997,15 +997,6 @@ button,
 }
 
 .booking {
-  min-height: 555px;
-  background-color: #e3ecf6;
-  background-image: url("../img/backgrounds/bg-image-booking-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.booking__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1013,16 +1004,20 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 30px;
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 50px 163px;
+  min-height: 555px;
+  padding: 50px var(--side-offset);
+  background-color: #e3ecf6;
+  background-image: url("../img/backgrounds/bg-image-booking-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .booking__container {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  margin-bottom: 10px;
+  margin: 0 0 10px 60px;
 }
 
 .booking__container h3--h3,
@@ -1051,6 +1046,7 @@ button,
   max-width: 403px;
   min-width: 300px;
   width: 38.75%;
+  margin-right: 60px;
 }
 
 .booking-form {
@@ -1191,7 +1187,7 @@ button,
   opacity: 0.8;
 }
 
-.contacts__wrapper {
+.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1199,9 +1195,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 8.5%;
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 120px 103px;
+  padding: 120px var(--side-offset);
   background-color: #f9fbfd;
 }
 
@@ -1830,11 +1824,6 @@ button,
   }
 
   .booking {
-    min-height: 805px;
-    background-image: url("../img/backgrounds/bg-image-booking-tablet.jpg");
-  }
-
-  .booking__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1843,7 +1832,9 @@ button,
     -ms-flex-align: center;
     align-items: center;
     gap: 0;
-    padding: 87px 45px 100px;
+    min-height: 805px;
+    padding: 87px var(--side-offset) 100px;
+    background-image: url("../img/backgrounds/bg-image-booking-tablet.jpg");
   }
 
   .booking__container {
@@ -1878,9 +1869,9 @@ button,
     width: auto;
   }
 
-  .contacts__wrapper {
+  .contacts {
     gap: 4.7%;
-    padding: 100px 45px;
+    padding: 100px var(--side-offset);
   }
 
   .contacts__map-wrapper {
@@ -2237,11 +2228,8 @@ button,
 
   .booking {
     min-height: 760px;
+    padding: 60px var(--side-offset) 65px;
     background-image: url("../img/backgrounds/bg-image-booking-mobile.jpg");
-  }
-
-  .booking__wrapper {
-    padding: 60px 15px 65px;
   }
 
   .booking__container h3--h3,
@@ -2288,13 +2276,13 @@ button,
     line-height: 12px;
   }
 
-  .contacts__wrapper {
+  .contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 0;
-    padding: 58px 15px 65px;
+    padding: 58px var(--side-offset) 65px;
   }
 
   .contacts__map-wrapper {

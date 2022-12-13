@@ -1,27 +1,25 @@
 @import "./variables.scss";
 
-.contacts__wrapper {
+.contacts {
   display: flex;
   align-items: center;
   gap: 8.5%;
 
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 120px 103px;
+  padding: 120px var(--side-offset);
 
   background-color: $color-default-white;
 
   @media (max-width: $vp-1023) {
     gap: 4.7%;
 
-    padding: 100px 45px;
+    padding: 100px var(--side-offset);
   }
 
   @media (max-width: $vp-767) {
     flex-direction: column;
     gap: 0;
 
-    padding: 58px 15px 65px;
+    padding: 58px var(--side-offset) 65px;
   }
 }
 
