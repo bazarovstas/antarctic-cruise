@@ -1848,7 +1848,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 52px;
+    margin: 0 0 52px 0;
   }
 
   .booking__container h3--h3,
@@ -1867,6 +1867,7 @@ button,
 
   .booking__form-container {
     width: auto;
+    margin-right: 0;
   }
 
   .contacts {
@@ -1959,7 +1960,7 @@ button,
 
 @media (max-width: 1023px) and (max-width: 767px) {
   .booking__container {
-    margin-bottom: 35px;
+    margin-bottom: 52px;
   }
 }
 

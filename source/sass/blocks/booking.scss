@@ -57,10 +57,10 @@
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 52px;
+    margin: 0 0 52px 0;
 
     @media (max-width: $vp-767) {
-      margin-bottom: 35px;
+      margin-bottom: 52px;
     }
   }
 }
@@ -131,6 +131,7 @@
 
   @media (max-width: $vp-1023) {
     width: auto;
+    margin-right: 0;
   }
 
   @media (max-width: $vp-767) {
