@@ -8,6 +8,11 @@ import {enableGoogleMap} from './modules/map';
 window.addEventListener('DOMContentLoaded', () => {
   mobileMenuToggle();
   enableGoogleMap();
+
+
+  document.documentElement.style.setProperty('--scrollbarWidth',
+      `${window.innerWidth - document.body.clientWidth}px`);
+
   // Utils
   // ---------------------------------
 

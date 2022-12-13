@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --side-offset: calc(50vw - 565px - var(--scrollbarWidth, 0px) * 0.5);
+
+  @media (max-width: $vp-1023) {
+    --side-offset: 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    --side-offset: 15px;
+  }
+}
+
 html,
 body {
   margin: 0;

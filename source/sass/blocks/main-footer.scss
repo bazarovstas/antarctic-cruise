@@ -2,6 +2,7 @@
 
 .main-footer {
   background-color: $color-default-black;
+  padding: 0 var(--side-offset);
 }
 
 .main-footer__wrapper {
@@ -10,8 +11,9 @@
 
   max-width: 1366px;
   min-height: 138px;
+  width: 100%;
   margin: 0 auto;
-  padding: 25px 103px;
+  // padding: 25px 103px;
 
   background-color: $color-default-black;
 
