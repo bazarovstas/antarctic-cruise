@@ -8,8 +8,8 @@
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 
-  .header,
-  .footer {
+  .main-header,
+  .main-footer {
     flex-shrink: 0;
   }
 

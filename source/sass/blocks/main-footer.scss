@@ -1,25 +1,18 @@
 @import "./variables.scss";
 
 .main-footer {
-  background-color: $color-default-black;
-  padding: 0 var(--side-offset);
-}
-
-.main-footer__wrapper {
   display: flex;
   align-items: center;
 
-  max-width: 1366px;
   min-height: 138px;
   width: 100%;
-  margin: 0 auto;
-  // padding: 25px 103px;
+  padding: 25px var(--side-offset);
 
   background-color: $color-default-black;
 
   @media (max-width: $vp-1023) {
     min-height: 120px;
-    padding: 0 45px;
+    padding: 0 var(--side-offset);
   }
 
   @media (max-width: $vp-767) {
@@ -27,7 +20,7 @@
     align-items: flex-start;
 
     min-height: 283px;
-    padding: 36px 15px 40px;
+    padding: 36px var(--side-offset) 40px;
   }
 }
 
