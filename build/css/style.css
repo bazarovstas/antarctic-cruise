@@ -679,21 +679,21 @@ button,
   color: #ffd694;
 }
 
-.main-nav__toogle {
+.main-nav__toggle {
   display: none;
 }
 
-.main-nav--nojs .main-nav__toogle {
+.main-nav--nojs .main-nav__toggle {
   display: none;
 }
 
-.main-nav__toogle-closed,
-.main-nav__toogle-open {
+.main-nav__toggle-closed,
+.main-nav__toggle-open {
   stroke: #f9fbfd;
 }
 
-.main-nav__toogle:hover .main-nav__toogle-closed,
-.main-nav__toogle:hover .main-nav__toogle-open {
+.main-nav__toggle:hover .main-nav__toggle-closed,
+.main-nav__toggle:hover .main-nav__toggle-open {
   stroke: #ffd694;
 }
 
@@ -2109,7 +2109,7 @@ button,
     color: #ffd694;
   }
 
-  .main-nav__toogle {
+  .main-nav__toggle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2124,18 +2124,24 @@ button,
     cursor: pointer;
   }
 
-  .main-nav--open .main-nav__toogle-closed,
-  .main-nav--closed .main-nav__toogle-open {
+  .main-nav__toggle-icon {
+    position: relative;
+    width: 24px;
+    height: 13px;
+  }
+
+  .main-nav--open .main-nav__toggle-closed,
+  .main-nav--closed .main-nav__toggle-open {
     display: none;
   }
 
-  .main-nav--closed .main-nav__toogle-closed {
+  .main-nav--closed .main-nav__toggle-closed {
     display: block;
     width: 24px;
     height: 12px;
   }
 
-  .main-nav--open .main-nav__toogle-open {
+  .main-nav--open .main-nav__toggle-open {
     z-index: 1;
     display: block;
     stroke: #011c40;

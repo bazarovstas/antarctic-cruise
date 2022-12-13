@@ -1,7 +1,7 @@
 function mobileMenuToggle() {
   let nav = document.querySelector('.main-header');
   let main = document.querySelector('.main-container');
-  let toggle = document.querySelector('.main-nav__toogle');
+  let toggle = document.querySelector('.main-nav__toggle');
   let scrollLock = document.querySelector('body');
   let paddingBlock1 = document.querySelector('.main-header__wrapper');
   let paddingBlock2 = document.querySelector('.main__wrapper');

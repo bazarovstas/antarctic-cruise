@@ -7,8 +7,8 @@
     <meta name="description" content="Путешествие в Антарктику, круизы на край Земли.">
     <title>Antarctic Cruise</title>
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="fonts/montserrat-cyrillic-variable-wghtOnly-normal.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-latin-variable-wghtOnly-normal.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-cyrillic-variable-wghtOnly-normal.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-latin-variable-wghtOnly-normal.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -43,14 +43,11 @@
               </ul>
             </nav>
 
-            <button class="main-nav__toogle" type="button">
-              <svg class="main-nav__toogle-closed" width="24" height="12" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-menu-closed"></use>
+            <button class="main-nav__toggle" type="button" aria-label="Открыть мобильное меню.">
+              <svg class="main-nav__toggle-icon" width="24" height="13" aria-hidden="true" focusable="false">
+                <use class="main-nav__toggle-closed" xlink:href="img/sprite.svg#icon-menu-closed"></use>
+                <use class="main-nav__toggle-open" xlink:href="img/sprite.svg#icon-menu-open"></use>
               </svg>
-              <svg class="main-nav__toogle-open" width="13" height="13" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-menu-open"></use>
-              </svg>
-              <span class="visually-hidden" aria-label="Открыть мобильное меню.">Открыть меню</span>
             </button>
           </div>
         </div>
@@ -355,7 +352,7 @@
         </section>
 
         <section class="booking">
-          <h2 class="booking__heading  visually-hidden">Форма обратной связи</h2>
+          <h2 class="booking__heading  visually-hidden">Форма обратной связи.</h2>
           <div class="booking__wrapper">
             <div class="booking__container">
               <h3 class="booking__heading  booking__heading--h3">Раннее бронирование</h3>
@@ -363,18 +360,18 @@
             </div>
             <div class="booking__form-container">
               <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
-                <h3 class="booking-form__heading" aria-label="Перейти к заполнению формы.">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
+                <h3 class="booking-form__heading">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
                 <div class="booking-form__name">
                   <input id="form-name-field" name="form-name" type="text" placeholder="Имя" required>
-                  <label class="visually-hidden" for="form-name-field">Имя</label>
+                  <label class="visually-hidden" for="form-name-field">Имя.</label>
                 </div>
                 <div class="booking-form__phone">
                   <input id="form-phone-field" name="form-phone" type="tel" placeholder="Телефон" data-validate-phone pattern="^\8\d{10}$" required>
-                  <label class="visually-hidden" for="form-phone-field">Телефон</label>
+                  <label class="visually-hidden" for="form-phone-field">Телефон.</label>
                 </div>
                 <div class="booking-form__email">
                   <input id="form-email-field" name="form-email-field" type="email" placeholder="Email">
-                  <label class="visually-hidden" for="form-email-field">Email</label>
+                  <label class="visually-hidden" for="form-email-field">Email.</label>
                 </div>
                 <div class="booking-form__checkbox  checkbox">
                   <input id="form-accept-checkbox-field" type="checkbox" name="feedback-form-accept-checkbox" value="feedback-form-accepted" required>
@@ -403,12 +400,18 @@
               <ul class="contacts__list">
                 <li class="contacts__item">
                   <address class="contacts__address">
-                    <p class="contacts__address-text" aria-label="Мы находимся по адресу.">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная,&nbsp;19/8</p>
+                    <p class="contacts__address-text">
+                      <span class="visually-hidden">Мы находимся по адресу.</span>
+                      г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная,&nbsp;19/8
+                    </p>
                   </address>
                 </li>
                 <li class="contacts__item">
                   <address class="contacts__phone">
-                    <a class="contacts__phone-link" href="tel:+78002000000" aria-label="Контактный номер телефона.">8-800-200-00-00</a>
+                    <a class="contacts__phone-link" href="tel:+78002000000">
+                      <span class="visually-hidden">Контактный номер телефона.</span>
+                      8-800-200-00-00
+                    </a>
                   </address>
                 </li>
               </ul>
@@ -429,7 +432,7 @@
               </a>
             </div>
             <div class="main-footer__nav-wrapper  footer-nav">
-              <h2 class="footer-nav__heading  visually-hidden">Навигация по сайту</h2>
+              <h2 class="footer-nav__heading  visually-hidden">Навигация по сайту.</h2>
               <ul class="footer-nav__list">
                 <li class="footer-nav__item">
                   <a class="footer-nav__link" href="#">Преимущества</a>
@@ -447,7 +450,7 @@
             </div>
 
             <div class="main-footer__social-wrapper  social">
-              <h2 class="social__heading  visually-hidden">Социальные сети</h2>
+              <h2 class="social__heading  visually-hidden">Социальные сети.</h2>
               <ul class="social__list">
                 <li class="social__item">
                   <a class="social__link" href="#">

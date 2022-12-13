@@ -140,7 +140,7 @@
   }
 }
 
-.main-nav__toogle {
+.main-nav__toggle {
   display: none;
 
   @media (max-width: $vp-767) {
@@ -153,23 +153,32 @@
   }
 }
 
-.main-nav--nojs .main-nav__toogle {
+.main-nav--nojs .main-nav__toggle {
   display: none;
 }
 
-.main-nav__toogle-closed,
-.main-nav__toogle-open {
+.main-nav__toggle-icon {
+  @media (max-width: $vp-767) {
+    position: relative;
+
+    width: 24px;
+    height: 13px;
+  }
+}
+
+.main-nav__toggle-closed,
+.main-nav__toggle-open {
   stroke: $color-default-white;
 }
 
-.main-nav--open .main-nav__toogle-closed,
-.main-nav--closed .main-nav__toogle-open {
+.main-nav--open .main-nav__toggle-closed,
+.main-nav--closed .main-nav__toggle-open {
   @media (max-width: $vp-767) {
     display: none;
   }
 }
 
-.main-nav--closed .main-nav__toogle-closed {
+.main-nav--closed .main-nav__toggle-closed {
   @media (max-width: $vp-767) {
     display: block;
 
@@ -178,7 +187,7 @@
   }
 }
 
-.main-nav--open .main-nav__toogle-open {
+.main-nav--open .main-nav__toggle-open {
   @media (max-width: $vp-767) {
     z-index: 1;
 
@@ -189,7 +198,7 @@
   }
 }
 
-.main-nav__toogle:hover .main-nav__toogle-closed,
-.main-nav__toogle:hover .main-nav__toogle-open {
+.main-nav__toggle:hover .main-nav__toggle-closed,
+.main-nav__toggle:hover .main-nav__toggle-open {
   stroke: $color-caramel;
 }
