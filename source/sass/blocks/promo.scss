@@ -1,13 +1,11 @@
 @import "./variables.scss";
 
-.promo__wrapper {
+.promo {
   display: grid;
   grid-template-columns: 44% 48%;
   gap: 8%;
 
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 112px 103px 145px 103px;
+  padding: 112px var(--side-offset) 145px;
 
   background-color: $color-default-white;
 
@@ -15,14 +13,14 @@
     grid-template-columns: 48% 48%;
     gap: 3.5%;
 
-    padding: 90px 45px 94px;
+    padding: 90px var(--side-offset) 94px;
   }
 
   @media (max-width: $vp-767) {
     grid-template-columns: 100%;
     gap: 0;
 
-    padding: 58px 15px 85px 15px;
+    padding: 58px var(--side-offset) 85px;
   }
 }
 

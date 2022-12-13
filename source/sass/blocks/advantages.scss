@@ -2,6 +2,7 @@
 
 .advantages {
   min-height: 562px;
+  padding: 112px var(--side-offset);
 
   background-color: $color-solitude;
   background-image: url("../img/backgrounds/bg-image-advantages-desktop.jpg");
@@ -17,6 +18,7 @@
 
   @media (max-width: $vp-1023) {
     min-height: 588px;
+    padding: 90px var(--side-offset);
 
     background-image: url("../img/backgrounds/bg-image-advantages-tablet.jpg");
 
@@ -27,6 +29,7 @@
 
   @media (max-width: $vp-767) {
     min-height: auto;
+    padding: 56px var(--side-offset) 64px;
 
     background-image: url("../img/backgrounds/bg-image-advantages-mobile.jpg");
 
@@ -36,21 +39,7 @@
   }
 }
 
-.advantages__wrapper {
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 112px 103px;
-
-  @media (max-width: $vp-1023) {
-    padding: 90px 45px;
-  }
-
-  @media (max-width: $vp-767) {
-    padding: 56px 15px 64px;
-  }
-}
-
-.advantages__wrapper h2,
+.advantages h2,
 .advantages__heading {
   margin: 0;
   padding-bottom: 50px;

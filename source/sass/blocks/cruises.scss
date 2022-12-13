@@ -1,16 +1,16 @@
 @import "./variables.scss";
 
-.cruises__wrapper {
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 85px 118px 120px 118px;
+.cruises {
+  margin: 0 15px;
+  padding: 85px var(--side-offset) 120px;
 
   @media (max-width: $vp-1023) {
-    padding: 90px 60px 99px;
+    padding: 90px var(--side-offset) 99px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 57px 25px 65px;
+    margin: 0 10px;
+    padding: 57px var(--side-offset) 65px;
   }
 }
 
