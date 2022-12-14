@@ -18,6 +18,13 @@ function toggleMenu() {
   headerWrapper.classList.toggle('mobile-menu-open');
   mainWrapper.classList.toggle('mobile-menu-open');
   promoWrapper.classList.toggle('mobile-menu-open');
+
+  let ariaLabel = toggle.getAttribute('aria-label');
+  if (ariaLabel === 'Открыть мобильное меню.') {
+    toggle.setAttribute('aria-label', 'Закрыть мобильное меню.');
+  } else {
+    toggle.setAttribute('aria-label', 'Открыть мобильное меню.');
+  }
 }
 
 export function initMobileMenu() {
