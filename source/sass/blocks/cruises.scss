@@ -162,6 +162,10 @@
   }
 }
 
+.cruises__article-info::-webkit-scrollbar {
+  display: none;
+}
+
 .cruises__article-info dt {
   padding-top: 10px;
 
