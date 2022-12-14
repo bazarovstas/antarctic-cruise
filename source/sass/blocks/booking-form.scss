@@ -22,7 +22,7 @@
   margin: 0;
   padding-bottom: 4px;
 
-  font-weight: 500;
+  font-variation-settings: "wght" 500;
   font-size: 18px;
   line-height: 27px;
   color: $color-default-white;
@@ -43,7 +43,7 @@
   height: 100%;
   padding: 11px 16px;
 
-  font-weight: 400;
+  font-variation-settings: "wght" 400;
   font-size: 14px;
   line-height: 21px;
   color: $color-default-black;
@@ -82,7 +82,7 @@
 }
 
 .booking-form__checkbox label {
-  font-weight: 400;
+  font-variation-settings: "wght" 400;
   font-size: 10px;
   line-height: 13px;
   color: $color-default-white;
@@ -103,7 +103,7 @@
   width: 100%;
   padding: 11px 24px;
 
-  font-weight: 600;
+  font-variation-settings: "wght" 600;
   font-size: 14px;
   line-height: 21px;
   color: $color-default-black;

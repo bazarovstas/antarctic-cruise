@@ -2,7 +2,7 @@
   display: inline-flex;
   padding: 10px 24px;
 
-  font-weight: 600;
+  font-variation-settings: "wght" 600;
   font-size: 14px;
   line-height: 21px;
   color: $color-default-black;
@@ -12,10 +12,6 @@
   cursor: pointer;
 
   transition: opacity $trans-default;
-
-  // &--red {
-  //   background-color: ;
-  // }
 
   &:disabled {
     opacity: 0.5;

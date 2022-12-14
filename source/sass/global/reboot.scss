@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-$offset-side: 1160px;
-
 :root {
   --side-offset: calc(50vw - #{$offset-side * 0.5} - var(--scrollbarWidth, 0px) * 0.5);
 

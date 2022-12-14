@@ -17,7 +17,7 @@
   margin: 0;
   padding-bottom: 50px;
 
-  font-weight: 600;
+  font-variation-settings: "wght" 600;
   font-size: 28px;
   line-height: 42px;
   color: $color-default-black;
@@ -131,7 +131,7 @@
   margin: 0;
   margin-top: auto;
 
-  font-weight: 500;
+  font-variation-settings: "wght" 500;
   font-size: 18px;
   line-height: 27px;
   color: $color-default-white;
@@ -169,7 +169,7 @@
 .cruises__article-info dt {
   padding-top: 10px;
 
-  font-weight: 500;
+  font-variation-settings: "wght" 500;
   font-size: 14px;
   line-height: 19.5px;
   color: $color-default-white;
@@ -184,7 +184,7 @@
 .cruises__article-info dd {
   margin: 0;
 
-  font-weight: 400;
+  font-variation-settings: "wght" 400;
   font-size: 14px;
   line-height: 19.5px;
   color: $color-quartz;
