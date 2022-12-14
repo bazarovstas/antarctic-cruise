@@ -6,7 +6,7 @@
   gap: 30px;
 
   min-height: 555px;
-  padding: 50px var(--side-offset);
+  padding: 50px calc(var(--side-offset) + 60px);
 
   background-color: $color-solitude;
   background-image: url("../img/backgrounds/bg-image-booking-desktop.jpg");
@@ -50,17 +50,17 @@
 .booking__container {
   align-self: center;
 
-  margin: 0 0 10px 60px;
+  margin-bottom: 10px;
 
   @media (max-width: $vp-1023) {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    margin: 0 0 52px 0;
+    margin-bottom: 52px;
 
     @media (max-width: $vp-767) {
-      margin-bottom: 52px;
+      margin-bottom: 35px;
     }
   }
 }
@@ -127,11 +127,9 @@
   max-width: 403px;
   min-width: 300px;
   width: 38.75%;
-  margin-right: 60px;
 
   @media (max-width: $vp-1023) {
     width: auto;
-    margin-right: 0;
   }
 
   @media (max-width: $vp-767) {

@@ -1,16 +1,15 @@
 @import "./variables.scss";
 
 .cruises {
-  margin: 0 15px;
-  padding: 85px var(--side-offset) 120px;
+  padding: 85px calc(var(--side-offset) + 15px) 120px;
 
   @media (max-width: $vp-1023) {
-    padding: 90px var(--side-offset) 99px;
+    padding-top: 90px;
+    padding-bottom: 99px;
   }
 
   @media (max-width: $vp-767) {
-    margin: 0 10px;
-    padding: 57px var(--side-offset) 65px;
+    padding: 57px calc(var(--side-offset) + 10px) 65px;
   }
 }
 

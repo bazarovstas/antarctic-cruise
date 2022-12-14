@@ -855,8 +855,7 @@ button,
 }
 
 .cruises {
-  margin: 0 15px;
-  padding: 85px var(--side-offset) 120px;
+  padding: 85px calc(var(--side-offset) + 15px) 120px;
 }
 
 .cruises__heading {
@@ -1004,7 +1003,7 @@ button,
   justify-content: space-between;
   gap: 30px;
   min-height: 555px;
-  padding: 50px var(--side-offset);
+  padding: 50px calc(var(--side-offset) + 60px);
   background-color: #e3ecf6;
   background-image: url("../img/backgrounds/bg-image-booking-desktop.jpg");
   background-repeat: no-repeat;
@@ -1016,7 +1015,7 @@ button,
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  margin: 0 0 10px 60px;
+  margin-bottom: 10px;
 }
 
 .booking__container h3--h3,
@@ -1045,7 +1044,6 @@ button,
   max-width: 403px;
   min-width: 300px;
   width: 38.75%;
-  margin-right: 60px;
 }
 
 .booking-form {
@@ -1299,6 +1297,7 @@ button,
   min-height: 306px;
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 .map__no-js .map__iframe {
@@ -1552,11 +1551,13 @@ button,
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1250px) {
   :root {
     --side-offset: 45px;
   }
+}
 
+@media (max-width: 1023px) {
   .main-header {
     padding: 30px var(--side-offset);
   }
@@ -1680,7 +1681,8 @@ button,
   }
 
   .cruises {
-    padding: 90px var(--side-offset) 99px;
+    padding-top: 90px;
+    padding-bottom: 99px;
   }
 
   .cruises__heading {
@@ -1735,7 +1737,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 0 0 52px 0;
+    margin-bottom: 52px;
   }
 
   .booking__container h3--h3,
@@ -1754,7 +1756,6 @@ button,
 
   .booking__form-container {
     width: auto;
-    margin-right: 0;
   }
 
   .contacts {
@@ -1847,7 +1848,7 @@ button,
 
 @media (max-width: 1023px) and (max-width: 767px) {
   .booking__container {
-    margin-bottom: 52px;
+    margin-bottom: 35px;
   }
 }
 
@@ -2090,8 +2091,7 @@ button,
   }
 
   .cruises {
-    margin: 0 10px;
-    padding: 57px var(--side-offset) 65px;
+    padding: 57px calc(var(--side-offset) + 10px) 65px;
   }
 
   .cruises__heading {
