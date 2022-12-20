@@ -27,16 +27,16 @@
         <nav class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#advantages" class="main-nav__link">Преимущества</a>
+              <a href="#advantages" class="main-nav__link" tabindex="1">Преимущества</a>
             </li>
             <li class="main-nav__item">
-              <a href="#promo" class="main-nav__link">Направления</a>
+              <a href="#promo" class="main-nav__link" tabindex="1">Направления</a>
             </li>
             <li class="main-nav__item">
-              <a href="#cruises" class="main-nav__link">Ближайшие круизы</a>
+              <a href="#cruises" class="main-nav__link" tabindex="1">Ближайшие круизы</a>
             </li>
             <li class="main-nav__item">
-              <a href="#contacts" class="main-nav__link">Контакты</a>
+              <a href="#contacts" class="main-nav__link" tabindex="1">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -112,7 +112,7 @@
 
           <div class="cruises__list-container">
             <ul class="cruises__list">
-              <li class="cruises__item">
+              <li class="cruises__item" tabindex="1">
                 <article class="cruises__article">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-astoria-mobile.webp 1x, img/contents/image-astoria-mobile@2x.webp 2x">
@@ -140,7 +140,7 @@
                 </article>
               </li>
 
-              <li class="cruises__item">
+              <li class="cruises__item" tabindex="1">
                 <article class="cruises__article">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-minion-1-mobile.webp 1x, img/contents/image-minion-1-mobile@2x.webp 2x">
@@ -168,7 +168,7 @@
                 </article>
               </li>
 
-              <li class="cruises__item">
+              <li class="cruises__item" tabindex="1">
                 <article class="cruises__article">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-atlantis-mobile.webp 1x, img/contents/image-atlantis-mobile@2x.webp 2x">
@@ -196,7 +196,7 @@
                 </article>
               </li>
 
-              <li class="cruises__item">
+              <li class="cruises__item" tabindex="1">
                 <article class="cruises__article">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-odysseus-mobile.webp 1x, img/contents/image-odysseus-mobile@2x.webp 2x">
@@ -224,7 +224,7 @@
                 </article>
               </li>
 
-              <li class="cruises__item">
+              <li class="cruises__item" tabindex="1">
                 <article class="cruises__article">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-olympia-mobile.webp 1x, img/contents/image-olympia-mobile@2x.webp 2x">
@@ -252,7 +252,7 @@
                 </article>
               </li>
 
-              <li class="cruises__item">
+              <li class="cruises__item" tabindex="1">
                 <article class="cruises__article">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-aurora-mobile.webp 1x, img/contents/image-aurora-mobile@2x.webp 2x">
@@ -280,7 +280,7 @@
                 </article>
               </li>
 
-              <li class="cruises__item">
+              <li class="cruises__item" tabindex="1">
                 <article class="cruises__article">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-leonor-mobile.webp 1x, img/contents/image-leonor-mobile@2x.webp 2x">
@@ -308,7 +308,7 @@
                 </article>
               </li>
 
-              <li class="cruises__item">
+              <li class="cruises__item" tabindex="1">
                 <article class="cruises__article">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/contents/image-minion-1-mobile.webp 1x, img/contents/image-minion-1-mobile@2x.webp 2x">
@@ -350,23 +350,23 @@
             <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
               <h3 class="booking-form__heading">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
               <div class="booking-form__name">
-                <input id="form-name-field" name="form-name" type="text" placeholder="Имя" required>
+                <input id="form-name-field" name="form-name" type="text" placeholder="Имя" tabindex="1" required>
                 <label class="visually-hidden" for="form-name-field">Имя.</label>
               </div>
               <div class="booking-form__phone">
-                <input id="form-phone-field" name="form-phone" type="tel" placeholder="Телефон" data-validate-phone pattern="^\8\d{10}$" required>
+                <input id="form-phone-field" name="form-phone" type="number" placeholder="Телефон" data-validate-phone pattern="^\8\d{10}$" tabindex="1" required>
                 <label class="visually-hidden" for="form-phone-field">Телефон.</label>
               </div>
               <div class="booking-form__email">
-                <input id="form-email-field" name="form-email-field" type="email" placeholder="Email">
+                <input id="form-email-field" name="form-email-field" type="email" placeholder="Email" tabindex="1" required>
                 <label class="visually-hidden" for="form-email-field">Email.</label>
               </div>
               <div class="booking-form__checkbox  checkbox">
-                <input id="form-accept-checkbox-field" type="checkbox" name="feedback-form-accept-checkbox" value="feedback-form-accepted" required>
+                <input id="form-accept-checkbox-field" type="checkbox" name="feedback-form-accept-checkbox" value="feedback-form-accepted" tabindex="1" required>
                 <label for="form-accept-checkbox-field">Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных</label>
               </div>
               <div class="booking-form__button">
-                <button type="submit">Оставить заявку</button>
+                <button type="submit" tabindex="1">Оставить заявку</button>
               </div>
             </form>
           </div>
@@ -378,7 +378,7 @@
             <h3 class="contacts__map-heading  visually-hidden">Интерактивная карта</h3>
             <div class="map__container  map__no-js">
               <div class="map__no-js-container"></div>
-              <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018931483289!2d30.322276154757713!3d59.938716497749525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2suk!4v1649000168325!5m2!1sru!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Как до нас добраться."></iframe>
+              <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018931483289!2d30.322276154757713!3d59.938716497749525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2suk!4v1649000168325!5m2!1sru!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Как до нас добраться." tabindex="-1"></iframe>
             </div>
           </div>
           <div class="contacts__container">
@@ -394,7 +394,7 @@
               </li>
               <li class="contacts__item">
                 <address class="contacts__phone">
-                  <a class="contacts__phone-link" href="tel:+78002000000">
+                  <a class="contacts__phone-link" href="tel:+78002000000" tabindex="1">
                     <span class="visually-hidden">Контактный номер телефона.</span>
                     8-800-200-00-00
                   </a>
@@ -418,16 +418,16 @@
           <h2 class="footer-nav__heading  visually-hidden">Навигация по сайту.</h2>
           <ul class="footer-nav__list">
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Преимущества</a>
+              <a class="footer-nav__link" href="#" tabindex="1">Преимущества</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Направления</a>
+              <a class="footer-nav__link" href="#" tabindex="1">Направления</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Ближайшие круизы</a>
+              <a class="footer-nav__link" href="#" tabindex="1">Ближайшие круизы</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Контакты</a>
+              <a class="footer-nav__link" href="#" tabindex="1">Контакты</a>
             </li>
           </ul>
         </div>
@@ -436,7 +436,7 @@
           <h2 class="social__heading  visually-hidden">Социальные сети.</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" tabindex="1">
                 <svg class="social__icon  social__icon-ok" width="12" height="20" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#icon-social-ok"></use>
                 </svg>
@@ -445,7 +445,7 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" tabindex="1">
                 <svg class="social__icon  social__icon-zen" width="20" height="20" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#icon-social-zen"></use>
                 </svg>
@@ -454,7 +454,7 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" tabindex="1">
                 <svg class="social__icon  social__icon-reddit" width="20" height="20" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#icon-social-reddit"></use>
                 </svg>

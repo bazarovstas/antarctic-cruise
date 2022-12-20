@@ -91,10 +91,6 @@
 
   background-color: $color-default-white;
 
-  &:hover {
-    background-color: $color-default-black;
-  }
-
   @media (max-width: $vp-1023) {
     padding: 25px 20px 23px;
 
@@ -131,10 +127,6 @@
   }
 }
 
-.advantages__item:hover .advantages__icon {
-  fill: $color-default-white;
-}
-
 .advantages__list h3,
 .advantages__item-title {
   margin: 0;
@@ -159,10 +151,6 @@
   }
 }
 
-.advantages__item:hover .advantages__item-title {
-  color: $color-default-white;
-}
-
 .advantages__list p,
 .advantages__item-description {
   margin: 0;
@@ -173,8 +161,4 @@
   color: $color-default-black;
 
   cursor: default;
-}
-
-.advantages__item:hover .advantages__item-description {
-  color: $color-default-white;
 }

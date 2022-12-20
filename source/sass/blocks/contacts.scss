@@ -104,6 +104,8 @@
 .contacts__phone {
   position: relative;
 
+  max-width: 190px;
+
   &::before {
     content: "";
     position: absolute;

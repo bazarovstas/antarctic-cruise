@@ -668,7 +668,7 @@ button,
 }
 
 .main-nav__link:hover {
-  color: #ffd694;
+  color: #74a6d2;
 }
 
 .main-nav__toggle {
@@ -686,7 +686,7 @@ button,
 
 .main-nav__toggle:hover .main-nav__toggle-closed,
 .main-nav__toggle:hover .main-nav__toggle-open {
-  stroke: #ffd694;
+  stroke: #74a6d2;
 }
 
 .main {
@@ -817,14 +817,6 @@ button,
   background-color: #f9fbfd;
 }
 
-.advantages__item:hover {
-  background-color: #011c40;
-}
-
-.advantages__item:hover .advantages__icon {
-  fill: #f9fbfd;
-}
-
 .advantages__list h3,
 .advantages__item-title {
   margin: 0;
@@ -836,10 +828,6 @@ button,
   cursor: default;
 }
 
-.advantages__item:hover .advantages__item-title {
-  color: #f9fbfd;
-}
-
 .advantages__list p,
 .advantages__item-description {
   margin: 0;
@@ -848,10 +836,6 @@ button,
   line-height: 19.6px;
   color: #011c40;
   cursor: default;
-}
-
-.advantages__item:hover .advantages__item-description {
-  color: #f9fbfd;
 }
 
 .cruises {
@@ -914,7 +898,8 @@ button,
   display: none;
 }
 
-.cruises__item:hover .cruises__article-container {
+.cruises__item:hover .cruises__article-container,
+.cruises__item:focus .cruises__article-container {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -933,7 +918,8 @@ button,
   cursor: default;
 }
 
-.cruises__item:hover .cruises__article-info {
+.cruises__item:hover .cruises__article-info,
+.cruises__item:focus .cruises__article-info {
   z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -971,7 +957,8 @@ button,
   cursor: default;
 }
 
-.cruises__item:hover .cruises__article-heading {
+.cruises__item:hover .cruises__article-heading,
+.cruises__item:focus .cruises__article-heading {
   position: relative;
 }
 
@@ -986,7 +973,8 @@ button,
   word-break: break-all;
 }
 
-.cruises__item:hover .cruises__article-booking-btn {
+.cruises__item:hover .cruises__article-booking-btn,
+.cruises__item:focus .cruises__article-booking-btn {
   z-index: 1;
   display: block;
 }
@@ -1229,6 +1217,7 @@ button,
 
 .contacts__phone {
   position: relative;
+  max-width: 190px;
 }
 
 .contacts__phone::before {
@@ -1365,7 +1354,7 @@ button,
 }
 
 .footer-nav__link:hover {
-  color: #ffd694;
+  color: #4d8dc6;
 }
 
 .social__list {
@@ -1406,7 +1395,7 @@ button,
 }
 
 .social__link:hover .social__icon {
-  fill: #ffd694;
+  fill: #4d8dc6;
 }
 
 .btn {
@@ -1478,12 +1467,18 @@ button,
   background-position: 50% 50%;
 }
 
-.checkbox input:focus + label::before {
+.checkbox input:hover + label::before {
   background-color: #ffd694;
 }
 
+.checkbox input:focus + label::before {
+  background-color: #ffedcc;
+}
+
 .checkbox input:focus-visible + label::before {
-  outline: 2px solid #f9fbfd;
+  border: 2px solid #ffb733;
+  border-radius: 2px;
+  outline: 1px solid #f9fbfd;
 }
 
 /* @mixin hover-focus {
@@ -1694,7 +1689,8 @@ button,
     padding: 29px 35px;
   }
 
-  .cruises__item:hover .cruises__article-container {
+  .cruises__item:hover .cruises__article-container,
+  .cruises__item:focus .cruises__article-container {
     padding: 28px 35px 35px;
   }
 
@@ -1951,7 +1947,7 @@ button,
 
   .main-nav--open .main-nav__link:hover,
   .main-nav--nojs .main-nav__link:hover {
-    color: #ffd694;
+    color: #74a6d2;
   }
 
   .main-nav__toggle {
@@ -2107,7 +2103,8 @@ button,
     padding: 25px 25px 18px;
   }
 
-  .cruises__item:hover .cruises__article-container {
+  .cruises__item:hover .cruises__article-container,
+  .cruises__item:focus .cruises__article-container {
     padding: 28px 25px 35px;
   }
 

@@ -117,7 +117,7 @@
   line-height: 19.5px;
 
   &:hover {
-    color: $color-caramel;
+    color: lighten($color-bahama-blue, 30%);
   }
 
   @media (max-width: $vp-1023) {
@@ -135,7 +135,7 @@
     color: $color-default-black;
 
     &:hover {
-      color: $color-caramel;
+      color: lighten($color-bahama-blue, 30%);
     }
   }
 }
@@ -200,5 +200,5 @@
 
 .main-nav__toggle:hover .main-nav__toggle-closed,
 .main-nav__toggle:hover .main-nav__toggle-open {
-  stroke: $color-caramel;
+  stroke: lighten($color-bahama-blue, 30%);
 }

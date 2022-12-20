@@ -45,10 +45,16 @@
   background-position: 50% 50%;
 }
 
-.checkbox input:focus + label::before {
+.checkbox input:hover + label::before {
   background-color: $color-caramel;
 }
 
+.checkbox input:focus + label::before {
+  background-color: lighten($color-orange, 40%);
+}
+
 .checkbox input:focus-visible + label::before {
-  outline: 2px solid $color-default-white;
+  border: 2px solid lighten($color-orange, 10%);
+  border-radius: 2px;
+  outline: 1px solid $color-default-white;
 }
