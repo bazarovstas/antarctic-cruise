@@ -691,7 +691,7 @@ button,
 
 .main {
   min-height: 658px;
-  padding: 19.7% var(--side-offset) 14%;
+  padding: 269px var(--side-offset) 191px;
   background-color: #2a5983;
   background-image: url("../img/backgrounds/bg-image-main-desktop.jpg");
   background-repeat: no-repeat;
@@ -1035,7 +1035,7 @@ button,
 
 .booking__container p,
 .booking__text-context {
-  max-width: 450px;
+  max-width: 355px;
   margin: 0;
   font-variation-settings: "wght" 400;
   font-size: 18px;
@@ -1046,8 +1046,7 @@ button,
 
 .booking__form-container {
   max-width: 403px;
-  min-width: 300px;
-  width: 38.75%;
+  min-width: 403px;
 }
 
 .booking-form {
@@ -1587,7 +1586,7 @@ button,
 
   .main {
     min-height: 638px;
-    padding: 35% var(--side-offset) 14%;
+    padding: 269px var(--side-offset) 108px;
     background-image: url("../img/backgrounds/bg-image-main-tablet.jpg");
   }
 
@@ -1749,7 +1748,6 @@ button,
 
   .booking__container p,
   .booking__text-context {
-    max-width: 403px;
     text-align: center;
   }
 
@@ -2003,7 +2001,7 @@ button,
 
   .main {
     min-height: 500px;
-    padding: 55% var(--side-offset) 14%;
+    padding: 176px var(--side-offset) 45px;
     background-image: url("../img/backgrounds/bg-image-main-mobile.jpg");
   }
 

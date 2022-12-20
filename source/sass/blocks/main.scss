@@ -2,7 +2,7 @@
 
 .main {
   min-height: 658px;
-  padding: 19.7% var(--side-offset) 14%;
+  padding: 269px var(--side-offset) 191px;
 
   background-color: $color-bahama-blue;
   background-image: url("../img/backgrounds/bg-image-main-desktop.jpg");
@@ -18,7 +18,7 @@
 
   @media (max-width: $vp-1023) {
     min-height: 638px;
-    padding: 35% var(--side-offset) 14%;
+    padding: 269px var(--side-offset) 108px;
 
     background-image: url("../img/backgrounds/bg-image-main-tablet.jpg");
 
@@ -29,7 +29,7 @@
 
   @media (max-width: $vp-767) {
     min-height: 500px;
-    padding: 55% var(--side-offset) 14%;
+    padding: 176px var(--side-offset) 45px;
 
     background-image: url("../img/backgrounds/bg-image-main-mobile.jpg");
 
