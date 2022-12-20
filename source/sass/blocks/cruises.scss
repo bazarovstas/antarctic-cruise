@@ -73,18 +73,6 @@
   }
 }
 
-.cruises__item:hover {
-  &::before {
-    content: "";
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-    background-color: $color-default-black;
-  }
-}
-
 .cruises__article {
   height: 100%;
 }
@@ -106,6 +94,8 @@
   height: 100%;
   padding: 30px 30px 24px;
 
+  overflow-y: auto;
+
   @media (max-width: $vp-1023) {
     padding: 29px 35px;
   }
@@ -115,11 +105,16 @@
   }
 }
 
+.cruises__article-container::-webkit-scrollbar {
+  display: none;
+}
+
 .cruises__item:hover .cruises__article-container {
   align-items: flex-start;
 
   padding: 27px 25px 35px 25px;
 
+  background-color: $color-default-black;
   // transition: $trans-default;
 
   @media (max-width: $vp-1023) {
@@ -161,15 +156,10 @@
   padding: 5px 0 30px 0;
 
   word-break: break-word;
-  overflow-y: auto;
 
   @media (max-width: $vp-1023) {
     padding: 4px 0 30px 0;
   }
-}
-
-.cruises__article-info::-webkit-scrollbar {
-  display: none;
 }
 
 .cruises__article-info dt {

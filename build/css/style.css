@@ -884,14 +884,6 @@ button,
   height: 386px;
 }
 
-.cruises__item:hover::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #011c40;
-}
-
 .cruises__article {
   height: 100%;
 }
@@ -915,6 +907,11 @@ button,
   flex-direction: column;
   height: 100%;
   padding: 30px 30px 24px;
+  overflow-y: auto;
+}
+
+.cruises__article-container::-webkit-scrollbar {
+  display: none;
 }
 
 .cruises__item:hover .cruises__article-container {
@@ -922,6 +919,7 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   padding: 27px 25px 35px 25px;
+  background-color: #011c40;
 }
 
 .cruises__article-heading {
@@ -953,11 +951,6 @@ button,
   margin: 0;
   padding: 5px 0 30px 0;
   word-break: break-word;
-  overflow-y: auto;
-}
-
-.cruises__article-info::-webkit-scrollbar {
-  display: none;
 }
 
 .cruises__article-info dt {
@@ -1259,7 +1252,8 @@ button,
   color: #011c40;
 }
 
-.contacts__address-text {
+.contacts__address-text,
+.contacts__phone {
   padding-bottom: 22px;
 }
 
@@ -1346,8 +1340,10 @@ button,
 .footer-nav__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 21% 19% 30% 16%;
-  grid-template-columns: 21% 19% 30% 16%;
+  -ms-grid-columns: (-webkit-max-content)[4];
+  -ms-grid-columns: (max-content)[4];
+  grid-template-columns: repeat(4, -webkit-max-content);
+  grid-template-columns: repeat(4, max-content);
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1357,7 +1353,7 @@ button,
   row-gap: 23px;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 7px 0;
   list-style: none;
 }
 
@@ -1800,8 +1796,6 @@ button,
   }
 
   .footer-nav__list {
-    -ms-grid-columns: 23% 20% 31% 15%;
-    grid-template-columns: 23% 20% 31% 15%;
     -webkit-column-gap: 21px;
     -moz-column-gap: 21px;
     column-gap: 21px;
@@ -2245,16 +2239,15 @@ button,
     column-gap: 15px;
     row-gap: 8px;
     margin-bottom: 16px;
+    padding: 0;
+  }
+
+  .social__list {
+    margin-left: -10px;
   }
 
   .social__item {
     margin-left: 0;
-  }
-
-  .social__link {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
   }
 
   .checkbox label {
