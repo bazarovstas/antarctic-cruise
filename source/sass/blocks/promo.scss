@@ -7,7 +7,7 @@
 
   padding: 112px var(--side-offset) 145px;
 
-  background-color: $color-default-white;
+  background-color: $color-transparent;
 
   @media (max-width: $vp-1023) {
     grid-template-columns: 48% 48%;
