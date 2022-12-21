@@ -8,17 +8,11 @@
   max-width: 560px;
   max-height: 306px;
 
+  @include adaptive-bg("../img/backgrounds/bg-image-map-no-js-desktop", "png");
   background-color: $color-solitude;
-  background-image: url("../img/backgrounds/bg-image-map-no-js-desktop.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  @media (min-width: $vp-1023) {
-    @include retina {
-      background-image: url("../img/backgrounds/bg-image-map-no-js-desktop@2x.png");
-    }
-  }
 
   @media (max-width: $vp-1023) {
     min-width: 324px;
@@ -26,11 +20,7 @@
     max-width: 560px;
     max-height: 335px;
 
-    background-image: url("../img/backgrounds/bg-image-map-no-js-tablet.png");
-
-    @include retina {
-      background-image: url("../img/backgrounds/bg-image-map-no-js-tablet@2x.png");
-    }
+    @include adaptive-bg("../img/backgrounds/bg-image-map-no-js-tablet", "png");
   }
 
   @media (max-width: $vp-767) {
@@ -39,11 +29,7 @@
     max-width: 324px;
     max-height: 316px;
 
-    background-image: url("../img/backgrounds/bg-image-map-no-js-mobile.png");
-
-    @include retina {
-      background-image: url("../img/backgrounds/bg-image-map-no-js-mobile@2x.png");
-    }
+    @include adaptive-bg("../img/backgrounds/bg-image-map-no-js-mobile", "png");
   }
 
   &::after {
@@ -82,8 +68,4 @@
 
 .map__js .map__iframe {
   display: block;
-}
-
-.map__js .map__no-js-container {
-  display: none;
 }

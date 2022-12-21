@@ -4,38 +4,24 @@
   min-height: 562px;
   padding: 112px var(--side-offset);
 
+  @include adaptive-bg("../img/backgrounds/bg-image-advantages-desktop");
   background-color: $color-solitude;
-  background-image: url("../img/backgrounds/bg-image-advantages-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  @media (min-width: $vp-1023) {
-    @include retina {
-      background-image: url("../img/backgrounds/bg-image-advantages-desktop@2x.jpg");
-    }
-  }
 
   @media (max-width: $vp-1023) {
     min-height: 588px;
     padding: 90px var(--side-offset);
 
-    background-image: url("../img/backgrounds/bg-image-advantages-tablet.jpg");
-
-    @include retina {
-      background-image: url("../img/backgrounds/bg-image-advantages-tablet@2x.jpg");
-    }
+    @include adaptive-bg("../img/backgrounds/bg-image-advantages-tablet");
   }
 
   @media (max-width: $vp-767) {
     min-height: auto;
     padding: 56px var(--side-offset) 64px;
 
-    background-image: url("../img/backgrounds/bg-image-advantages-mobile.jpg");
-
-    @include retina {
-      background-image: url("../img/backgrounds/bg-image-advantages-mobile@2x.jpg");
-    }
+    @include adaptive-bg("../img/backgrounds/bg-image-advantages-mobile");
   }
 }
 

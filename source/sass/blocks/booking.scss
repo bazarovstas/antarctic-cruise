@@ -8,17 +8,11 @@
   min-height: 555px;
   padding: 50px calc(var(--side-offset) + 60px);
 
+  @include adaptive-bg("../img/backgrounds/bg-image-booking-desktop");
   background-color: $color-solitude;
-  background-image: url("../img/backgrounds/bg-image-booking-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  @media (min-width: $vp-1023) {
-    @include retina {
-      background-image: url("../img/backgrounds/bg-image-booking-desktop@2x.jpg");
-    }
-  }
 
   @media (max-width: $vp-1023) {
     flex-direction: column;
@@ -28,22 +22,14 @@
     min-height: 805px;
     padding: 87px var(--side-offset) 100px;
 
-    background-image: url("../img/backgrounds/bg-image-booking-tablet.jpg");
-
-    @include retina {
-      background-image: url("../img/backgrounds/bg-image-booking-tablet@2x.jpg");
-    }
+    @include adaptive-bg("../img/backgrounds/bg-image-booking-tablet");
   }
 
   @media (max-width: $vp-767) {
     min-height: 760px;
     padding: 60px var(--side-offset) 65px;
 
-    background-image: url("../img/backgrounds/bg-image-booking-mobile.jpg");
-
-    @include retina {
-      background-image: url("../img/backgrounds/bg-image-booking-mobile@2x.jpg");
-    }
+    @include adaptive-bg("../img/backgrounds/bg-image-booking-mobile");
   }
 }
 
