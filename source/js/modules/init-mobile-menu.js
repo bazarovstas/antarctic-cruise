@@ -1,44 +1,57 @@
+import {selectArray} from '../utils/selector';
+
 const {body} = document;
+const [header, main, footer] = selectArray([
+  'header',
+  'main-container',
+  'main-footer'
+]);
 
-const [nav, main, toggle, headerWrapper, mainWrapper, promoWrapper, mainNav]
-  = [
-    '.main-header',
-    '.main-container',
-    '.main-nav__toggle',
-    '.main-header',
-    '.main',
-    '.promo',
-    '.main-nav__list'
-  ].map((cssQuery) => body.querySelector(cssQuery));
+const [overlay, toggler] = selectArray(['header__overlay', 'header__toggle']);
 
-function toggleMenu() {
-  nav.classList.toggle('main-nav--closed');
-  nav.classList.toggle('main-nav--open');
-  body.classList.toggle('scroll-lock');
-  headerWrapper.classList.toggle('mobile-menu-open');
-  mainWrapper.classList.toggle('mobile-menu-open');
-  promoWrapper.classList.toggle('mobile-menu-open');
+const closeMenu = () => toggleMenu(false);
 
-  let ariaLabel = toggle.getAttribute('aria-label');
-  if (ariaLabel === 'Открыть мобильное меню.') {
-    toggle.setAttribute('aria-label', 'Закрыть мобильное меню.');
-  } else {
-    toggle.setAttribute('aria-label', 'Открыть мобильное меню.');
+function closeMenuOnEsc(evt) {
+  if (evt.key === 'Escape') {
+    closeMenu();
   }
 }
 
+const handlerToggleClick = () =>
+  toggleMenu(toggler.getAttribute('aria-expanded') === 'false');
+
+function toggleMenu(willBeOpened = false) {
+  body.classList.toggle('scroll-lock', willBeOpened);
+  header.classList.toggle('header--open', willBeOpened);
+
+  toggler.setAttribute(
+      'aria-label',
+      `${willBeOpened ? 'Закрыть' : 'Открыть'} мобильное меню.`
+  );
+  inertOtherContent(willBeOpened);
+
+  toggler.setAttribute('aria-label', String(willBeOpened));
+
+  if (willBeOpened) {
+    document.addEventListener('keydown', closeMenuOnEsc);
+  } else {
+    document.removeEventListener('keydown', closeMenuOnEsc);
+  }
+}
+
+function inertOtherContent(willBeInert = false) {
+  main.inert = willBeInert;
+  footer.inert = willBeInert;
+}
+
 export function initMobileMenu() {
-  if (nav && main && toggle && headerWrapper && mainWrapper && promoWrapper && mainNav) {
-    nav.classList.remove('main-nav--nojs');
-    nav.classList.add('main-nav--closed');
-    main.classList.remove('main-nav--nojs');
+  if (header && main && footer) {
+    header.classList.remove('header--no-js');
+    header.classList.add('header--enabled');
+  }
 
-    toggle.addEventListener('click', toggleMenu);
-
-    mainNav.addEventListener('click', ({target}) => {
-      if (window.innerWidth <= 767 && target.href) {
-        toggleMenu();
-      }
-    });
+  if (overlay && toggler) {
+    toggler.addEventListener('click', handlerToggleClick);
+    overlay.addEventListener('click', closeMenu);
   }
 }
