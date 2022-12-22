@@ -1,0 +1,12 @@
+.nav-toggle__open {
+  display: none;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__open {
+  display: block;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__close {
+  display: none;
+}
+

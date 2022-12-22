@@ -84,8 +84,43 @@
     gap: #{37 - 25}px;
     align-items: start;
     align-content: start;
+
+    width: 100%;
   }
 
+  .header--open .header__toggle {
+    justify-self: end;
 
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .header--open .header__list,
+  .header--no-js .header__list {
+    display: grid;
+  }
+
+  .header__logo {
+    padding: 20px var(--side-offset);
+  }
+
+  .header__toggle {
+    display: block;
+
+    height: 100%;
+    padding: 20px var(--side-offset);
+  }
+
+  .header--no-js {
+    position: static;
+
+    padding: 20px var(--side-offset, 20px);
+
+    color: $color-default-black;
+  }
+
+  .header__list {
+    display: none;
+  }
 }
 
