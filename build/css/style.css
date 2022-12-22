@@ -1488,6 +1488,27 @@ button,
   outline: 1px solid #f9fbfd;
 }
 
+.sitemap {
+  padding: 30px;
+  cursor: default;
+}
+
+.sitemap ol {
+  padding-left: 20px;
+}
+
+.sitemap a {
+  font-variation-settings: "wght" 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #011c40;
+  background-color: #f9fbfd;
+}
+
+.sitemap a:hover {
+  color: #74a6d2;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

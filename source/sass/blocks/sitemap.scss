@@ -1,0 +1,23 @@
+.sitemap {
+  padding: 30px;
+
+  cursor: default;
+}
+
+.sitemap ol {
+  padding-left: 20px;
+}
+
+.sitemap a {
+
+  font-variation-settings: "wght" 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-default-black;
+
+  background-color: $color-default-white;
+
+  &:hover {
+    color: lighten($color-bahama-blue, 30%);
+  }
+}
