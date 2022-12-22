@@ -1285,17 +1285,6 @@ button,
   background-image: url("../img/backgrounds/bg-image-map-no-js-desktop.png");
 }
 
-.map__no-js-container::after {
-  content: "";
-  position: absolute;
-  bottom: 22%;
-  left: 45%;
-  width: 18px;
-  height: 22px;
-  background-image: url("../img/sprite/icon-pin.svg");
-  background-repeat: no-repeat;
-}
-
 .map__iframe {
   min-height: 306px;
   width: 100%;
