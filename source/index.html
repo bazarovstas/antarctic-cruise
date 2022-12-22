@@ -15,17 +15,23 @@
 
   <body>
     <div class="wrapper">
-      <header class="main-header  main-nav  main-nav--nojs">
-        <div class="main-header__logo-wrapper">
-          <a class="main-header__logo  logo-header">
-            <svg class="logo-header__image" width="70" height="38" aria-hidden="true" focusable="false">
-              <use xlink:href="img/sprite.svg#logo"></use>
-            </svg>
-          </a>
-        </div>
+      <header class="header  header--no-js">
+        <div class="header__overlay" aria-hidden="true"></div>
+        <a class="header__logo">
+          <svg class="logo-header" width="70" height="38" aria-hidden="true" focusable="false" fill="currentColor">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
 
-        <nav class="main-nav__wrapper">
-          <ul class="main-nav__list">
+        <nav class="header__nav">
+          <button class="header__toggle  nav-toggle" type="button" aria-label="Открыть мобильное меню." aria-expanded="false">
+            <svg width="24" height="13" aria-hidden="true" focusable="false" stroke="currentColor">
+              <use class="nav-toggle__close" xlink:href="img/sprite.svg#icon-menu-closed"></use>
+              <use class="nav-toggle__open" xlink:href="img/sprite.svg#icon-menu-open"></use>
+            </svg>
+          </button>
+
+          <ul class="header__list  main-nav">
             <li class="main-nav__item">
               <a href="#advantages" class="main-nav__link" tabindex="1">Преимущества</a>
             </li>
@@ -40,13 +46,44 @@
             </li>
           </ul>
         </nav>
+      </header>
 
-        <button class="main-nav__toggle" type="button" aria-label="Открыть мобильное меню.">
+
+
+
+
+      <!-- <header class="main-header  main-nav  main-nav--nojs">
+        <div class="main-header__logo-wrapper">
+          <a class="main-header__logo  logo-header">
+            <svg class="logo-header__image" width="70" height="38" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+
+        <nav class="main-nav__wrapper">
+          <ul class="main-nav__list"> -->
+            <!-- <li class="main-nav__item">
+              <a href="#advantages" class="main-nav__link" tabindex="1">Преимущества</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#promo" class="main-nav__link" tabindex="1">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#cruises" class="main-nav__link" tabindex="1">Ближайшие круизы</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#contacts" class="main-nav__link" tabindex="1">Контакты</a>
+            </li>
+          </ul>
+        </nav> -->
+
+        <!-- <button class="main-nav__toggle" type="button" aria-label="Открыть мобильное меню.">
           <svg class="main-nav__toggle-icon" width="24" height="13" aria-hidden="true" focusable="false">
             <use class="main-nav__toggle-closed" xlink:href="img/sprite.svg#icon-menu-closed"></use>
             <use class="main-nav__toggle-open" xlink:href="img/sprite.svg#icon-menu-open"></use>
           </svg>
-        </button>
+        </button> -->
       </header>
 
 

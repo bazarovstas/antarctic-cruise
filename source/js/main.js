@@ -6,7 +6,7 @@ import {addNoWebpClasses} from './modules/webp';
 
 window.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
-  // enableGoogleMap();
+  enableGoogleMap();
   addNoWebpClasses();
 
   document.documentElement.style.setProperty('--scrollbarWidth',
