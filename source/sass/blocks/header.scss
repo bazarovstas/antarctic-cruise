@@ -109,6 +109,12 @@
 
     height: 100%;
     padding: 20px var(--side-offset);
+
+    cursor: pointer;
+  }
+
+  .header__toggle:hover svg {
+    stroke: lighten($color-bahama-blue, 30%);
   }
 
   .header--no-js {

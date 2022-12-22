@@ -15,6 +15,10 @@
   align-content: center;
 
   color: inherit;
+
+  &:hover {
+    color: lighten($color-bahama-blue, 30%);
+  }
 }
 
 @media (max-width: $vp-767) {

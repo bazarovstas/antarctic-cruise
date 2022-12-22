@@ -671,6 +671,10 @@ button,
   color: inherit;
 }
 
+.main-nav__link:hover {
+  color: #74a6d2;
+}
+
 .nav-toggle__open {
   display: none;
 }
@@ -1545,6 +1549,8 @@ button,
     padding: 269px var(--side-offset) 108px;
     background-image: -webkit-image-set(url("../img/backgrounds/bg-image-main-tablet@2x.webp") 2x, url("../img/backgrounds/bg-image-main-tablet.webp") 1x);
     background-image: image-set(url("../img/backgrounds/bg-image-main-tablet@2x.webp") 2x, url("../img/backgrounds/bg-image-main-tablet.webp") 1x);
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 
   .main--no-webp {
@@ -1901,6 +1907,11 @@ button,
     display: block;
     height: 100%;
     padding: 20px var(--side-offset);
+    cursor: pointer;
+  }
+
+  .header__toggle:hover svg {
+    stroke: #74a6d2;
   }
 
   .header--no-js {

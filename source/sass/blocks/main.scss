@@ -16,6 +16,7 @@
     padding: 269px var(--side-offset) 108px;
 
     @include adaptive-bg("../img/backgrounds/bg-image-main-tablet");
+    box-shadow: none;
   }
 
   @media (max-width: $vp-767) {
