@@ -5,9 +5,9 @@ const [header, main, footer] = selectArray([
   'header',
   'main-container',
   'main-footer'
-]);
+], body);
 
-const [overlay, toggler] = selectArray(['header__overlay', 'header__toggle']);
+const [overlay, toggler] = selectArray(['header__overlay', 'header__toggle'], header);
 
 const closeMenu = () => toggleMenu(false);
 
@@ -30,7 +30,7 @@ function toggleMenu(willBeOpened = false) {
   );
   inertOtherContent(willBeOpened);
 
-  toggler.setAttribute('aria-label', String(willBeOpened));
+  toggler.setAttribute('aria-expanded', String(willBeOpened));
 
   if (willBeOpened) {
     document.addEventListener('keydown', closeMenuOnEsc);
@@ -40,14 +40,15 @@ function toggleMenu(willBeOpened = false) {
 }
 
 function inertOtherContent(willBeInert = false) {
-  main.inert = willBeInert;
-  footer.inert = willBeInert;
+  if (main && footer) {
+    main.inert = willBeInert;
+    footer.inert = willBeInert;
+  }
 }
 
 export function initMobileMenu() {
-  if (header && main && footer) {
+  if (header) {
     header.classList.remove('header--no-js');
-    header.classList.add('header--enabled');
   }
 
   if (overlay && toggler) {
