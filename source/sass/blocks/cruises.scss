@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 .cruises {
-  padding: 85px calc(var(--side-offset) + 15px) 120px;
+  padding: 87px calc(var(--side-offset) + 15px) 120px;
 
   @media (max-width: $vp-1023) {
     padding-top: 90px;

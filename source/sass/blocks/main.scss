@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 .main {
-  min-height: 658px;
+  min-height: 650px;
   padding: 269px var(--side-offset) 191px;
 
   @include adaptive-bg("../img/backgrounds/bg-image-main-desktop");

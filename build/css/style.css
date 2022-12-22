@@ -688,7 +688,7 @@ button,
 }
 
 .main {
-  min-height: 658px;
+  min-height: 650px;
   padding: 269px var(--side-offset) 191px;
   background-image: -webkit-image-set(url("../img/backgrounds/bg-image-main-desktop@2x.webp") 2x, url("../img/backgrounds/bg-image-main-desktop.webp") 1x);
   background-image: image-set(url("../img/backgrounds/bg-image-main-desktop@2x.webp") 2x, url("../img/backgrounds/bg-image-main-desktop.webp") 1x);
@@ -736,7 +736,8 @@ button,
   -ms-grid-columns: 44% 48%;
   grid-template-columns: 44% 48%;
   gap: 8%;
-  padding: 112px var(--side-offset) 145px;
+  max-height: 566px;
+  padding: 120px var(--side-offset) 145px;
   background-color: rgba(255, 255, 255, 0);
 }
 
@@ -849,7 +850,7 @@ button,
 }
 
 .cruises {
-  padding: 85px calc(var(--side-offset) + 15px) 120px;
+  padding: 87px calc(var(--side-offset) + 15px) 120px;
 }
 
 .cruises__heading {
@@ -1196,6 +1197,7 @@ button,
 
 .contacts__container {
   width: 43.1%;
+  padding-top: 20px;
 }
 
 .contacts__promo-text {
@@ -1535,13 +1537,23 @@ button,
 
 @media (max-width: 1023px) {
   .header {
-    padding-top: 35px;
+    padding-top: 27px;
     padding-bottom: 35px;
   }
 
   .logo-header {
     width: 38px;
     height: auto;
+  }
+
+  .main-nav {
+    gap: 20px 23px;
+  }
+
+  .main-nav__link {
+    font-variation-settings: "wght" 500;
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .main {
@@ -1578,6 +1590,7 @@ button,
     -ms-grid-columns: 48% 48%;
     grid-template-columns: 48% 48%;
     gap: 3.5%;
+    max-height: 640px;
     padding: 90px var(--side-offset) 94px;
   }
 
@@ -1587,6 +1600,7 @@ button,
 
   .promo__layout-container h2,
   .promo__heading {
+    padding-bottom: 15px;
     font-size: 26px;
     line-height: 36.5px;
   }
@@ -1733,6 +1747,10 @@ button,
     width: auto;
   }
 
+  .booking-form {
+    gap: 23px;
+  }
+
   .contacts {
     gap: 4.7%;
     padding: 100px var(--side-offset);
@@ -1748,6 +1766,10 @@ button,
 
   .contacts__promo-text {
     padding-bottom: 27px;
+  }
+
+  .contacts__address::before {
+    top: 3px;
   }
 
   .map__no-js-container {
@@ -1783,9 +1805,9 @@ button,
   }
 
   .footer-nav__list {
-    -webkit-column-gap: 21px;
-    -moz-column-gap: 21px;
-    column-gap: 21px;
+    -webkit-column-gap: 24px;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
     row-gap: 18px;
   }
 
@@ -1877,7 +1899,7 @@ button,
     display: grid;
     -ms-grid-rows: auto 1fr;
     grid-template-rows: auto 1fr;
-    gap: 12px;
+    gap: 7px;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
@@ -1927,6 +1949,20 @@ button,
   .logo-header {
     width: 42px;
     height: auto;
+  }
+
+  .main-nav {
+    gap: 10px 23px;
+  }
+
+  .main-nav__item {
+    padding: 0 10px;
+  }
+
+  .main-nav__link {
+    font-variation-settings: "wght" 500;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .main-nav {
@@ -2128,7 +2164,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 0;
-    padding: 58px var(--side-offset) 65px;
+    padding: 38px var(--side-offset) 65px;
   }
 
   .contacts__map-wrapper {
@@ -2146,7 +2182,7 @@ button,
   }
 
   .contacts__list {
-    padding-bottom: 35px;
+    padding-bottom: 14px;
   }
 
   .contacts__address::before {
